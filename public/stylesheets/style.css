@@ -9,27 +9,26 @@ body {
 }
 
 h1{
-  font-size: 5em;
-    
+  font-size: 4vw; 
 }
 h2{
-  font-size: 3em;
+  font-size: 4vw;
 }
 h3{
-  font-size: 2em;
+  font-size: 3vw;
 }
 p{
-  font-size: 1.5em;
+  font-size: 2vw;
 }
 ul{
   list-style: none;
 }
 li{
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 button{
-  font-size: 2em;
+  font-size: 3vw;/* "vw" muy bueno para que se achique solo cuando achico pantalla */
   font-weight: bold;/* grueso de la letra */
   padding: 10px 40px;
   border-radius: 20px;
@@ -39,6 +38,7 @@ button{
   background-color: rgb(133, 26, 182);
 }
 
+
 button:hover{
   background-color: rgb(218, 29, 177);
 }
@@ -46,6 +46,9 @@ button:hover{
 .container{
   max-width: 1400px;
   margin: auto;
+}
+.color-span{
+  color: blueviolet;
 }
 
 header{
@@ -96,6 +99,46 @@ header a:hover{
   background-size: cover;
   background-position: center center;
   color: aliceblue;
+}
+
+#somos-proya .container{/* somos diseño lonas el otro selection */
+  text-align: center;
+  padding: 180px 12px;
+}
+
+#nuestros-programas{
+  background-color: rgb(40, 40, 40);
+  color: white;
+  text-align: center;
+}
+#nuestros-programas h2{
+  margin-top: 0;
+}
+#nuestros-programas .container{
+  padding: 200px 12px;
+}
+#nuestros-programas .carta{
+  
+}
+
+
+#caracteristicas .container{
+  text-align: center;
+  padding: 220px 12px;
+}
+#caracteristicas li{
+  margin: 17px 0px;
+  font-weight: bold;
+}
+#final{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  height: 60vh;
 }
 
 
