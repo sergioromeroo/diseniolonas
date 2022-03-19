@@ -1,8 +1,104 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1{
+  font-size: 5em;
+    
 }
+h2{
+  font-size: 3em;
+}
+h3{
+  font-size: 2em;
+}
+p{
+  font-size: 1.5em;
+}
+ul{
+  list-style: none;
+}
+li{
+  font-size: 2em;
+}
+
+button{
+  font-size: 2em;
+  font-weight: bold;/* grueso de la letra */
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: 2px solid rgba(28, 37, 161, 0, 0.5);
+  box-shadow: 2px 2px 10px blue;
+  color: white;
+  background-color: rgb(133, 26, 182);
+}
+
+button:hover{
+  background-color: rgb(218, 29, 177);
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+header{
+  background-color: rgb(233, 222, 222);
+}
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 2em;
+
+}
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header a{
+  padding: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: blueviolet;
+}
+header a:hover{
+  color: rgb(173, 49, 163);
+}
+#hero{ /* aca va el mejores diseño lona y el botton */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;  /* esto va a ocupar el 70porciento de mi pantalla */
+  background-image: linear-gradient( /* oscurece la img para ver el texto */
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ) ,url("../images/IMPRESIÓN-DE-LONA.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+
+
+
