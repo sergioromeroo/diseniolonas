@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+.card{
+  background-color: aquamarine;
+}
 html{
   scroll-behavior: smooth;
 }
