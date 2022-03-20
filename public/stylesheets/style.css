@@ -173,5 +173,18 @@ header a:hover{
 
 
 
+@media (min-width: 720px){
+  header .container{
+    flex-direction: row;
+  }
+
+  header nav{
+    flex-direction: row;
+  }
+}
+
+
+
+
 
 
