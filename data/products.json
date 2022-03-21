@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "Lona",
-      "description": "lorem ipsum dolor amet sit            ",
+      "description": "lorem ipsum dolor amet sit",
       "price": 100,
       "images": [
         "lona-2.jpg"
@@ -42,7 +42,7 @@
     {
       "id": 5,
       "title": "carteles",
-      "description": "lorem ipsum dolor amet sit                             ",
+      "description": "lorem ipsum dolor amet sit",
       "price": 300,
       "images": [
         "CARTELES-ARTISTICOS-2.jpg"

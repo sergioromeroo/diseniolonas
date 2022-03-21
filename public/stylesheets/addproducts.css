@@ -1,0 +1,89 @@
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productos .conte_parent{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  
+}
+.productos .conte{
+    height: 510px;
+    width: 350px;
+    box-shadow:0 0 7px #111 ;
+    margin: 30px 30px;
+}
+.productos .conte .card{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 170px;
+}
+.productos .conte .card img{
+    margin: auto;
+    display: block;
+}
+.productos .conte .stromtroper img{
+    height: 330px;
+    width: 300px;
+}
+.productos .conte .stromtroper{
+     background-color: #111;
+}
+.productos .conte .iron-man{
+    background-color: #6A0C0B;
+}
+.productos .conte .spider-man{
+    background-color:#B11313;
+}
+.productos .conte .iron-man img{
+    height: 330px;
+    width: 230px;
+}
+.productos .conte .spider-man img{
+    height: 330px;
+    width: 300px;
+}
+.productos .informacion{
+    height: 80px;
+    width: 100%;
+}
+.productos .informacion h1{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: -10px;
+}
+.productos .informacion p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .9em;
+    color: #555;
+}
+.productos .precio {
+    height:50px;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productos .box-precio{
+    width: 80px;
+}
+.productos .precio1{
+    color: red;
+    font-size: .8em;
+}
+.precio .precio2{
+    font-size: 1.5em;
+}
+.productos .shoping{
+    font-size: 1.5em;
+    color: #555;
+}
