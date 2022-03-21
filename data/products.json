@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "Lona",
+      "description": "lorem ipsum dolor amet sit            ",
+      "price": 100,
+      "images": [
+        "lona-2.jpg"
+      ],
+      "category": "nuevo"
+    },
+    {
+      "id": 2,
+      "title": "Banners",
+      "description": "lorem ipsum dolor amet sit",
+      "price": 100,
+      "images": [
+        "BANNER-10.jpg"
+      ],
+      "category": "usado"
+    },
+    {
+      "id": 3,
+      "title": "Stickers",
+      "description": "lorem ipsum dolor amet sit",
+      "price": 100,
+      "images": [
+        "STICKERS-1.jpg"
+      ],
+      "category": "refaccionado"
+    },
+    {
+      "id": 4,
+      "title": "vinilos",
+      "description": "lorem ipsum dolor amet sit",
+      "price": 100,
+      "images": [
+        "VIDRIERAS-9.jpg"
+      ],
+      "category": "refaccionado"
+    },
+    {
+      "id": 5,
+      "title": "carteles",
+      "description": "lorem ipsum dolor amet sit                             ",
+      "price": 300,
+      "images": [
+        "CARTELES-ARTISTICOS-2.jpg"
+      ],
+      "category": "nuevo"
+    }
+]
