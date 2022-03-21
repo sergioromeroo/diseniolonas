@@ -20,18 +20,18 @@
 .productos .conte .card{
     height: 200px;
     width: 100%;
-    margin-bottom: 170px;
+    margin-bottom: 20%;
 }
 .productos .conte .card img{
     margin: auto;
     display: block;
 }
 .productos .conte .stromtroper img{
-    height: 330px;
-    width: 300px;
+    height: 120%;
+    width: 100%;
 }
 .productos .conte .stromtroper{
-     background-color: #111;
+     background-color: white;
 }
 .productos .conte .iron-man{
     background-color: #6A0C0B;

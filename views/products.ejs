@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head') %> 
+
+<body>
+  <%- include('./partials/header') %> 
+
+  <main class="productos">
+
+    <% productos.forEach(producto => { %>
+      <div class="conte">
+        <div class="card stromtroper">
+          <img src="/images/<%= producto.images %>" alt="">
+        </div>
+        <div class="informacion">
+          <h1><%= producto.title %> </h1>
+          <br>
+          <p class="fecha"><%= producto.description %> </p>
+        </div>
+        <div class="precio">
+          <div class="box-precio">
+            <span class="precio1"><strike>$/35.00</strike></span>
+            <span class="precio2"><b><%= producto.price %></b></span>
+            <span class="shoping"><i class="fas fa-cart-plus"></i></span>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+
+
+ 
+  
+</main>
+    
+
+
+  
+
+  <%- include('./partials/scripts') %>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head') %> 
+
+<body>
+  <%- include('./partials/header') %> 
+
+<main>
+    
+        <form>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">titulo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="escribir titulo " name="title">
+            </div>
+
+            <div class="mb-3">
+                <label for="floatingTextarea">Descripción</label>
+                <textarea class="form-control" id="floatingTextarea" name="description"></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="formGroupExampleInput2" name="price">
+              </div>
+          
+          
+            <div class="mb-3">
+              <select class="form-select" required aria-label="select example" name="category">
+                <option value="">seleccione una categoria</option>
+                <% categorias.forEach(categoria => { %>
+                  <option value="<%= categoria %>"><%= categoria %></option>
+                <% }) %> 
+                
+              </select>
+              <br>
+          
+            <div class="mb-3">
+              <input type="file" class="form-control" aria-label="file example" required>
+              <div class="invalid-feedback">Example invalid form file feedback</div>
+            </div>
+          
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit" >Enviar </button>
+            </div>
+          
+    </form>
+</main>
+
+  
+
+  <%- include('./partials/scripts') %>
+</body>
+
+</html>
