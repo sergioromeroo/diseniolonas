@@ -1,39 +1,116 @@
 *{
   box-sizing: border-box;
 }
-.card{
+.index .card{
   background-color: aquamarine;
 }
 html{
   scroll-behavior: smooth;
 }
 
-body {
+.index body {
   margin: 0;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-h1{
+/* carrousel */
+ .carousel__contenedorNot,
+ .carousel__contenedorCel,
+ .carousel__contenedor{
+    position: relative;
+}
+
+
+ .carousel__anteriorNot,
+ .carousel__siguienteNot,
+ .carousel__anteriorCel,
+ .carousel__siguienteCel,
+ .carousel__anterior,
+ .carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+
+ .carousel__anteriorNot:hover,
+ .carousel__siguienteNot:hover,
+ .carousel__anteriorCel:hover,
+ .carousel__siguienteCel:hover,
+ .carousel__anterior:hover,
+ .carousel__siguiente:hover {
+    opacity: 100%;
+}
+
+ .carousel__anteriorNot,
+ .carousel__anteriorCel,
+ .carousel__anterior {
+    left: -25px;
+}
+
+ .carousel__siguienteNot,
+ .carousel__siguienteCel,
+ .carousel__siguiente {
+    right: -25px;
+}
+
+ .carousel__listaGam,
+ .carousel__listaCel,
+ .carousel__listaNot {
+    overflow: hidden;
+}
+
+ .carousel__indicadoresNot .glider-dot,
+ .carousel__indicadoresCel .glider-dot,
+ .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+}
+
+ .carousel__indicadoresNot .glider-dot:hover,
+ .carousel__indicadoresCel .glider-dot:hover,
+ .carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+
+ .carousel__indicadoresNot .glider-dot.active,
+ .carousel__indicadoresCel .glider-dot.active,
+ .carousel__indicadores .glider-dot.active {
+    opacity: 1;
+}
+
+.index h1{
   font-size: 4vw; 
 }
-h2{
+.index h2{
   font-size: 4vw;
 }
-h3{
+.index h3{
   font-size: 3vw;
 }
-p{
+.index p{
   font-size: 2vw;
 }
-ul{
+.index ul{
   list-style: none;
 }
-li{
+.index li{
   font-size: 2.5em;
 }
 
-button{
+.index button{
   font-size: 3vw;/* "vw" muy bueno para que se achique solo cuando achico pantalla */
   font-weight: bold;/* grueso de la letra */
   padding: 10px 40px;
@@ -45,51 +122,19 @@ button{
 }
 
 
-button:hover{
+.index button:hover{
   background-color: rgb(218, 29, 177);
 }
 
-.container{
+.header .container{
   max-width: 1400px;
   margin: auto;
 }
-.color-span{
+.index .color-span{
   color: blueviolet;
 }
 
 
-header{
-  background-color: rgb(233, 222, 222);
-}
-header .logo{
-  margin: 0;
-  padding: 25px 30px;
-  font-weight: bold;
-  color: blueviolet;
-  font-size: 2em;
-
-}
-header .container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header nav{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 25px;
-}
-header a{
-  font-size: 1.5em;
-  padding: 5px 15px;
-  text-decoration: none;
-  font-weight: bold;
-  color: blueviolet;
-}
-header a:hover{
-  color: rgb(173, 49, 163);
-}
 #hero{ /* aca va el mejores diseño lona y el botton */
   display: flex;
   align-items: center;
@@ -132,21 +177,21 @@ header a:hover{
   margin: 60px 40px;
   border-radius: 15px;
 }
-.carta:first-child{
+.index .carta:first-child{
   background-image: linear-gradient( /* oscurece la img para ver el texto */
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
   ) ,url("../images/lona1.jpg");
 }
-.carta:nth-child(2){
+.index .carta:nth-child(2){
   background-image: linear-gradient( /* oscurece la img para ver el texto */
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
   ) ,url("../images/1314154-impresion-de-lonas-20180219192746217.jpg");
 }
-.carta:nth-child(3){
+.index .carta:nth-child(3){
   background-image: linear-gradient( /* oscurece la img para ver el texto */
     0deg,
     rgba(0,0,0,0.5),
@@ -177,12 +222,14 @@ header a:hover{
 
 
 @media (min-width: 720px){
-  header .container{
+  .header .encabezado{
     flex-direction: row;
+    justify-content: space-between;
   }
 
-  header nav{
+  .header nav{
     flex-direction: row;
+    padding-bottom: 0;
   }
 }
 

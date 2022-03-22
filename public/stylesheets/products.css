@@ -18,18 +18,20 @@
     margin: 30px 30px;
 }
 .productos .conte .card{
-    height: 200px;
-    width: 100%;
-    margin-bottom: 20%;
+    width: 56%;
+    height: 74%;
+    
 }
 .productos .conte .card img{
     margin: auto;
     display: block;
 }
 .productos .conte .stromtroper img{
-    height: 120%;
-    width: 100%;
-}
+    width: 180%;
+    height: 100%;
+    /* object-fit: contain; */
+/*     -webkit-box-reflect: below -25px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+ */}
 .productos .conte .stromtroper{
      background-color: white;
 }

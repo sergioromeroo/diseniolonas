@@ -1,13 +1,34 @@
 [
     {
       "id": 1,
-      "title": "Letrero",
+      "title": "Carteles",
       "description": "tendras todos los letreros de nuetros trabajo",
       "price": 1500,
       "images": [
-        "lona-2.jpg"
+        "10.jpeg"
+      ],
+      "category": "Carteles"
+    },
+    {
+      "id": 2,
+      "title": "Stickers",
+      "description": "tendras todos los letreros de nuetros trabajo",
+      "price": 1400,
+      "images": [
+        "777.jpeg"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "id": 3,
+      "title": "gorras",
+      "description": "tendras todos los letreros de nuetros trabajo",
+      "price": 1400,
+      "images": [
+        "456.jpeg"
       ],
       "category": "Banners"
     }
+    
     
 ]

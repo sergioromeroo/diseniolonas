@@ -19,10 +19,11 @@
           <p class="fecha"><%= producto.description %> </p>
         </div>
         <div class="precio">
-          <div class="box-precio">
-            <span class="precio1"><strike>$/35.00</strike></span>
-            <span class="precio2"><b><%= producto.price %></b></span>
-            <span class="shoping"><i class="fas fa-cart-plus"></i></span>
+          <div class="mb-3">
+            <br>
+            <a href="/products/detail/<%= producto.id %>">
+            <button class="btn btn-primary" type="submit">Mas Info</button>
+          </a>
           </div>
         </div>
       </div>

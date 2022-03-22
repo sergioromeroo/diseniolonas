@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head') %> 
+
+<body>
+  <%- include('./partials/header') %> 
+
+  <main class="detail">
+
+  
+  <div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+			</div>
+		</div>
+		<div class="product-detail">
+			<div class="row">
+				<div class="col-12 col-lg-8">
+					<img src="/images/<%= producto.images %>" alt="product image" class="product-detail-img">
+					<p class="product-detail-description">
+						<%= producto.description %>
+					</p>
+				</div>
+				<div class="col-12 col-lg-4">
+					<article class="product-detail-info">
+						<h1 class="product-detail-title" ><%= producto.title %></h1>
+							
+							<p class="product-detail-price">
+								<h3>comunicarse con el vendedor</h3>
+							</p>
+
+						<ul class="actions-list">
+							<li>
+								<i class="fas fa-credit-card"></i>
+								<p>Envios a Domicilio</p>
+							</li>
+							<li>
+								<i class="fas fa-store"></i>
+								<p>Retiro gratis en locales del vendedor</p>
+							</li>
+						</ul>
+
+						<a href="#" ><button type="button" class="btn btn-primary">COMUNICARSE</button></a>
+						<hr>
+
+						<a href="/products/edit/<%= producto.id %>" class="btn btn-success">EDITAR PRODUCTO</a>
+
+						<form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+							<button type="submit" class="btn btn-danger">ELIMINAR</button>
+						</form>
+						
+
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+  <%- include('./partials/scripts') %>
+</body>
+
+</html>
