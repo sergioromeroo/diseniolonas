@@ -65,5 +65,12 @@
     "description": "quiero saber si guarda esta mierda a mi json",
     "extra": "q onda paa anahsee",
     "category": "Stickers"
+  },
+  {
+    "id": 8,
+    "title": "hola",
+    "description": "afasfasf",
+    "extra": "",
+    "category": "Carteles"
   }
 ]
