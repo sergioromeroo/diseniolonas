@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
 }
 .productos .conte_parent{
   display:flex;

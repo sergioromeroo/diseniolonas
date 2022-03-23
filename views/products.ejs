@@ -7,8 +7,74 @@
   <%- include('./partials/header') %> 
 
   <main class="productos">
+<h3>Lonas</h3>
+    <% Lonas.forEach(producto => { %>
+      <div class="conte">
+        <div class="card stromtroper">
+          <img src="/images/<%= producto.images %>" alt="">
+        </div>
+        <div class="informacion">
+          <h1><%= producto.title %> </h1>
+          <br>
+          <p class="fecha"><%= producto.description %> </p>
+        </div>
+        <div class="precio">
+          <div class="mb-3">
+            <br>
+            <a href="/products/detail/<%= producto.id %>">
+            <button class="btn btn-primary" type="submit">Mas Info</button>
+          </a>
+          </div>
+        </div>
+      </div>
+    <% }) %>
 
-    <% productos.forEach(producto => { %>
+    <h3>Stickers</h3>
+    <% Stickers.forEach(producto => { %>
+      <div class="conte">
+        <div class="card stromtroper">
+          <img src="/images/<%= producto.images %>" alt="">
+        </div>
+        <div class="informacion">
+          <h1><%= producto.title %> </h1>
+          <br>
+          <p class="fecha"><%= producto.description %> </p>
+        </div>
+        <div class="precio">
+          <div class="mb-3">
+            <br>
+            <a href="/products/detail/<%= producto.id %>">
+            <button class="btn btn-primary" type="submit">Mas Info</button>
+          </a>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+
+    <h3>Carteles</h3>
+    <% Carteles.forEach(producto => { %>
+      <div class="conte">
+        <div class="card stromtroper">
+          <img src="/images/<%= producto.images %>" alt="">
+        </div>
+        <div class="informacion">
+          <h1><%= producto.title %> </h1>
+          <br>
+          <p class="fecha"><%= producto.description %> </p>
+        </div>
+        <div class="precio">
+          <div class="mb-3">
+            <br>
+            <a href="/products/detail/<%= producto.id %>">
+            <button class="btn btn-primary" type="submit">Mas Info</button>
+          </a>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+
+    <h3>Banners</h3>
+    <% Banners.forEach(producto => { %>
       <div class="conte">
         <div class="card stromtroper">
           <img src="/images/<%= producto.images %>" alt="">

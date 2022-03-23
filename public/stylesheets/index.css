@@ -14,83 +14,6 @@ html{
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* carrousel */
- .carousel__contenedorNot,
- .carousel__contenedorCel,
- .carousel__contenedor{
-    position: relative;
-}
-
-
- .carousel__anteriorNot,
- .carousel__siguienteNot,
- .carousel__anteriorCel,
- .carousel__siguienteCel,
- .carousel__anterior,
- .carousel__siguiente {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 20px);
-    cursor: pointer;
-    line-height: 30px;
-    text-align: center;
-    background: none;
-    color: #fff;
-    opacity: 20%;
-}
-
- .carousel__anteriorNot:hover,
- .carousel__siguienteNot:hover,
- .carousel__anteriorCel:hover,
- .carousel__siguienteCel:hover,
- .carousel__anterior:hover,
- .carousel__siguiente:hover {
-    opacity: 100%;
-}
-
- .carousel__anteriorNot,
- .carousel__anteriorCel,
- .carousel__anterior {
-    left: -25px;
-}
-
- .carousel__siguienteNot,
- .carousel__siguienteCel,
- .carousel__siguiente {
-    right: -25px;
-}
-
- .carousel__listaGam,
- .carousel__listaCel,
- .carousel__listaNot {
-    overflow: hidden;
-}
-
- .carousel__indicadoresNot .glider-dot,
- .carousel__indicadoresCel .glider-dot,
- .carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    opacity: .2;
-}
-
- .carousel__indicadoresNot .glider-dot:hover,
- .carousel__indicadoresCel .glider-dot:hover,
- .carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-}
-
- .carousel__indicadoresNot .glider-dot.active,
- .carousel__indicadoresCel .glider-dot.active,
- .carousel__indicadores .glider-dot.active {
-    opacity: 1;
-}
-
 .index h1{
   font-size: 4vw; 
 }
@@ -135,7 +58,7 @@ html{
 }
 
 
-#hero{ /* aca va el mejores diseño lona y el botton */
+.index .hero{ /* aca va el mejores diseño lona y el botton */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,27 +77,27 @@ html{
   color: aliceblue;
 }
 
-#somos-proya .container{/* somos diseño lonas el otro selection */
+.index .somos-proya .container{/* somos diseño lonas el otro selection */
   text-align: center;
   padding: 180px 12px;
 }
 
-#nuestros-programas{
+.index .nuestros-programas{
   background-color: rgb(40, 40, 40);
   color: white;
   text-align: center;
 }
-#nuestros-programas h2{
+.index .nuestros-programas h2{
   margin-top: 0;
 }
-#nuestros-programas .container{
+.index .nuestros-programas .container{
   padding: 200px 12px;
 }
-#nuestros-programas .carta{
+.index .nuestros-programas .carta{
   background-size: cover;
   background-position: center center;
   padding: 70px;
-  margin: 60px 40px;
+  margin: 35px 14px;
   border-radius: 15px;
 }
 .index .carta:first-child{
@@ -199,15 +122,15 @@ html{
   ) ,url("../images/servicios-banner-lonas-impresas-cancun.jpg");
 }
 
-#caracteristicas .container{
+.index .caracteristicas .container{
   text-align: center;
   padding: 220px 12px;
 }
-#caracteristicas li{
+.index .caracteristicas li{
   margin: 17px 0px;
   font-weight: bold;
 }
-#final{
+.index .final{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,14 +145,40 @@ html{
 
 
 @media (min-width: 720px){
-  .header .encabezado{
-    flex-direction: row;
-    justify-content: space-between;
+  
+  .index .somos-proya .container{
+    display: flex;
+    justify-content: center;
   }
-
-  .header nav{
-    flex-direction: row;
-    padding-bottom: 0;
+  .index .somos-proya .texto{
+    width: 50%;
+    text-align: initial;
+    padding-left: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .index .somos-proya .img-container{
+    background-image: url("../images/333.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+  .index .nuestros-programas .programas{
+    display: flex;
+    justify-content: center;
+  }
+  .index .nuestros-programas p{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .index .nuestros-programas h3{
+    margin-top: 0;
+  }
+  .index .nuestros-programas .carta{
+    padding: 20px;
   }
 }
 
