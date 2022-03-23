@@ -1,5 +1,9 @@
 *{
   box-sizing: border-box;
+  
+}
+body{
+  margin: 75px;
 }
 .index .card{
   background-color: aquamarine;

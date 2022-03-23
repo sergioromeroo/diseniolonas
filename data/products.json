@@ -1,34 +1,69 @@
 [
-    {
-      "id": 1,
-      "title": "Carteles",
-      "description": "tendras todos los letreros de nuetros trabajo",
-      "price": 1500,
-      "images": [
-        "10.jpeg"
-      ],
-      "category": "Carteles"
-    },
-    {
-      "id": 2,
-      "title": "Stickers",
-      "description": "tendras todos los letreros de nuetros trabajo",
-      "price": 1400,
-      "images": [
-        "777.jpeg"
-      ],
-      "category": "Stickers"
-    },
-    {
-      "id": 3,
-      "title": "gorras",
-      "description": "tendras todos los letreros de nuetros trabajo",
-      "price": 1400,
-      "images": [
-        "456.jpeg"
-      ],
-      "category": "Banners"
-    }
-    
-    
+  {
+    "id": 1,
+    "title": "Carteles",
+    "description": "tendras todos los letreros de nuetros trabajo",
+    "extra": "anashee",
+    "images": [
+      "10.jpeg"
+    ],
+    "category": "Carteles"
+  },
+  {
+    "id": 2,
+    "title": "Carteles",
+    "description": "tendras todos los letreros de nuetros trabajo",
+    "extra": "anashee",
+    "images": [
+      "10.jpeg"
+    ],
+    "category": "Carteles"
+  },
+  {
+    "id": 3,
+    "title": "Stickers",
+    "description": "tendras todos los letreros de nuetros trabajo",
+    "extra": "puede ser pa",
+    "images": [
+      "777.jpeg"
+    ],
+    "category": "Stickers"
+  },
+  {
+    "id": 4,
+    "title": "Stickers",
+    "description": "tendras todos los letreros de nuetros trabajo",
+    "extra": "puede ser pa",
+    "images": [
+      "777.jpeg"
+    ],
+    "category": "Stickers"
+  },
+  {
+    "id": 5,
+    "title": "gorras",
+    "description": "tendras todos los letreros de nuetros trabajo",
+    "extra": "good",
+    "images": [
+      "456.jpeg"
+    ],
+    "category": "Banners"
+  },
+  {
+    "id": 6,
+    "title": "gorras",
+    "description": "tendras todos los letreros de nuetros trabajo",
+    "extra": "cantidad simple o doble faz",
+    "images": [
+      "456.jpeg"
+    ],
+    "category": "Banners"
+  },
+  {
+    "id": 7,
+    "title": "de puerba aver si guarda",
+    "description": "quiero saber si guarda esta mierda a mi json",
+    "extra": "q onda paa anahsee",
+    "category": "Stickers"
+  }
 ]

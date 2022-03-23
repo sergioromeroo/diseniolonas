@@ -13,11 +13,27 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
             Banners : productos.filter(producto => producto.category === "Banners"),
         })
     },
+
     add : (req,res) => {
         return res.render('productAdd',{
             categorias
         })
     },
+
+    save : (req,res) =>{
+        const {title, description,extra,category} = req.body;
+        let producto ={
+            id : productos[productos.length - 1].id + 1,
+            title,
+            description,
+            extra,
+            category
+        }
+        productos.push(producto)
+        fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productos,null,2),'utf-8')/* q se me guarde en el json  */
+        return res.redirect('/')
+    },
+
     detail : (req,res) => {/* busco producto con el id */
         let producto = productos.find(producto => producto.id === +req.params.id)
 
