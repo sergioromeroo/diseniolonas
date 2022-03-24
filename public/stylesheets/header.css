@@ -34,21 +34,42 @@ a {
    color: white;
 }
 
+.nav-header a:hover{
+    color: orange;
+}
+.nav-header a i:hover{
+    color: orange;
+}
+
+.nav-header .logo img{
+    height: 55px
+}
 
 .nav-header .nav-1{
     height: 100%;
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 48%;
     justify-content: space-around;
+    font-weight: bolder;
 }
 
 .nav-header .nav-2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 38px;
     height: 100%;
+    font-size: 22px;
+    
 }
 
+.nav-header .nav-2  i{
+    color: white;
+    margin-top: 10px;
+    margin-right: 15px;
+}
 
+.nav-header .nav-2 .login{
+    margin-top: 2px;
+}
