@@ -41,8 +41,8 @@
   },
   {
     "id": 6,
-    "title": "gorras",
-    "description": "tendras todos los letreros de nuetros trabajo",
+    "title": "gorras  ",
+    "description": "gorritas facheras",
     "extra": "cantidad simple o doble faz",
     "images": [
       "456.jpeg"
@@ -56,5 +56,13 @@
     "extra": "si pa anasheee",
     "images": "images-1648098850079.jpg",
     "category": "Banners"
+  },
+  {
+    "id": 10,
+    "title": "lona buenisima",
+    "description": "aca pongo una lona nashe",
+    "extra": "este producto es good pa te lo recomienda tu mama",
+    "images": "images-1648148830305.jpeg",
+    "category": "Lonas"
   }
 ]
