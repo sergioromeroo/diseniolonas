@@ -36,9 +36,11 @@ a {
 
 .nav-header a:hover{
     color: orange;
+    transition-duration: 0.5s; 
 }
 .nav-header a i:hover{
     color: orange;
+    transition-duration: 0.5s; 
 }
 
 .nav-header .logo img{
@@ -70,6 +72,25 @@ a {
     margin-right: 15px;
 }
 
+.nav-header .nav-2 .icon-login img{
+    color: white;
+    height: 33px;
+    margin-right: 4px;
+}
+
+.nav-header .nav-2 .icon-login img:hover{
+    transform: scale(1.2);
+}
+
+
+
 .nav-header .nav-2 .login{
     margin-top: 2px;
 }
+
+
+
+.nav-header .add-products a{
+    font-size: 7px;
+}
+
