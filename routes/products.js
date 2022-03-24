@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const {products,add,detail,save,edit,update,remove} = require('../controllers/productsController');
-
+const {products,add,detail,save,edit,update} = require('../controllers/productsController');
+const remove = require('../controllers/productsController');
 const path = require('path');
 
 
@@ -28,6 +28,6 @@ router.post('/add',upload.single('images'), save)
 router.get('/detail/:id',detail);
 router.get('/edit/:id',edit);
 router.put('/edit/:id',update);
-router.delete('/remove/:id',remove);
+router.delete('/delete/:id',remove.destroy);
 
 module.exports = router;

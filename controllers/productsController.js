@@ -72,8 +72,15 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
         res.redirect('/')
     },
 
-    remove : (req,res) => {
-        res.send(req.params.id)
+    destroy : (req,res) => {
+        productos.forEach(producto=>{
+            if(producto.id === +req.params.id){
+                let productoAEliminar = productos.indexOf(producto);
+                productos.splice(productoAEliminar,1)
+            }
+        });
+        fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productos,null,2),'utf-8')
+        res.redirect('/products/products')
     }
     
 }
