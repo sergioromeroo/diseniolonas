@@ -21,12 +21,13 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     },
 
     save : (req,res) =>{
-        const {title, description,extra,category} = req.body;
+        const {title, description,extra,category,images} = req.body;
         let producto ={
             id : productos[productos.length - 1].id + 1,
             title,
             description,
             extra,
+            images: req.file ? req.file.filename : 'default-image.png',
             category
         }
         productos.push(producto)
@@ -40,5 +41,39 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
         return res.render('productDetail',{
             producto
         })
+    },
+
+    edit : (req,res) => {
+        let producto = productos.find(producto => producto.id === +req.params.id)
+
+        return res.render('productEdit',{
+            categorias,
+            productos,
+            producto
+        })
+    },
+
+    update : (req,res) => {
+        const {title, description,extra,category} = req.body;
+
+        let producto = productos.find(producto => producto.id === +req.params.id)
+        let productoEditado = {
+            id : +req.params.id,
+            title,
+            description,
+            extra,
+            category
+        }
+
+        let productosModificados = productos.map(producto => producto.id === +req.params.id ? productoEditado : producto)
+
+        fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productosModificados,null,2),'utf-8')/* q se me guarde en el json  */
+
+        res.redirect('/')
+    },
+
+    remove : (req,res) => {
+        res.send(req.params.id)
     }
+    
 }

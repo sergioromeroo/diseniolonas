@@ -8,7 +8,7 @@
 
 <main>
     
-        <form action="" method="post">
+        <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
               <label for="formGroupExampleInput" class="form-label">titulo</label>
               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="escribir titulo " name="title">
@@ -36,8 +36,9 @@
               <br>
           
             <div class="mb-3">
-              <input type="file" class="form-control" aria-label="file example" ><!-- required -->
-              <div class="invalid-feedback">Example invalid form file feedback</div>
+              <label for="productImagen" class="form-label">imagen</label>
+              <input type="file" class="form-control" id="productImagen" name="images" ><!-- required -->
+              
             </div>
           
             <div class="mb-3">
