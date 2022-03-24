@@ -1,4 +1,4 @@
-*{
+/* *{
   box-sizing: border-box;
   
 }
@@ -38,8 +38,8 @@ html{
 }
 
 .index button{
-  font-size: 3vw;/* "vw" muy bueno para que se achique solo cuando achico pantalla */
-  font-weight: bold;/* grueso de la letra */
+  font-size: 3vw;/
+  font-weight: bold;/
   padding: 10px 40px;
   border-radius: 20px;
   border: 2px solid rgba(28, 37, 161, 0, 0.5);
@@ -62,14 +62,14 @@ html{
 }
 
 
-.index .hero{ /* aca va el mejores diseño lona y el botton */
+.index .hero{ 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 70vh;  /* esto va a ocupar el 70porciento de mi pantalla */
-  background-image: linear-gradient( /* oscurece la img para ver el texto */
+  height: 70vh;  
+  background-image: linear-gradient( 
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
@@ -81,7 +81,7 @@ html{
   color: aliceblue;
 }
 
-.index .somos-proya .container{/* somos diseño lonas el otro selection */
+.index .somos-proya .container{
   text-align: center;
   padding: 180px 12px;
 }
@@ -105,21 +105,21 @@ html{
   border-radius: 15px;
 }
 .index .carta:first-child{
-  background-image: linear-gradient( /* oscurece la img para ver el texto */
+  background-image: linear-gradient( 
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
   ) ,url("../images/lona1.jpg");
 }
 .index .carta:nth-child(2){
-  background-image: linear-gradient( /* oscurece la img para ver el texto */
+  background-image: linear-gradient( 
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
   ) ,url("../images/1314154-impresion-de-lonas-20180219192746217.jpg");
 }
 .index .carta:nth-child(3){
-  background-image: linear-gradient( /* oscurece la img para ver el texto */
+  background-image: linear-gradient(
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
@@ -188,6 +188,6 @@ html{
 
 
 
-
+ */
 
 
