@@ -4,6 +4,8 @@ const {products,add,detail,save,edit,update} = require('../controllers/productsC
 const remove = require('../controllers/productsController');
 const path = require('path');
 
+const addProductValidator = require('../validations/addProductValidator')
+
 
 /*  de aca abajo hasta router es para subir imagenes  */
 const multer = require('multer'); /* debemos instalarlo npm install multer */
@@ -24,7 +26,7 @@ const upload = multer({
 
 router.get('/products', products);
 router.get('/add', add);
-router.post('/add',upload.single('images'), save)
+router.post('/add',upload.single('images'),addProductValidator, save)
 router.get('/detail/:id',detail);
 router.get('/edit/:id',edit);
 router.put('/edit/:id',update);

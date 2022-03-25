@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const productos = require('../data/products_db');
 const categorias = require('../data/categories_db');
+const {validationResult} = require('express-validator')
 
 module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     products : (req,res) => {
@@ -21,18 +22,28 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     },
 
     save : (req,res) =>{
-        const {title, description,extra,category,images} = req.body;
-        let producto ={
-            id : productos[productos.length - 1].id + 1,
-            title,
-            description,
-            extra,
-            images: req.file ? req.file.filename : 'default-image.png',
-            category
+        let errors = validationResult(req);/* validaciones del back si esta vacio los datos dame error sino hace lo siguiente lo de abajo*/
+        if(errors.isEmpty()){
+            const {title, description,extra,category,images} = req.body;
+            let producto ={
+                id : productos[productos.length - 1].id + 1,
+                title,
+                description,
+                extra,
+                images: req.file ? req.file.filename : 'default-image.png',
+                category
+            }
+            productos.push(producto)
+            fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productos,null,2),'utf-8')/* q se me guarde en el json  */
+            return res.redirect('/')
+        }else{
+            return res.render('productAdd',{
+                categorias,
+                productos,
+                errores : errors.mapped(),
+                old : req.body
+            })
         }
-        productos.push(producto)
-        fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productos,null,2),'utf-8')/* q se me guarde en el json  */
-        return res.redirect('/')
     },
 
     detail : (req,res) => {/* busco producto con el id */
