@@ -110,17 +110,59 @@
   .detail .product-detail-title {
     font-weight: 400;
     font-size: 2.8em;
+    font-style: oblique;
   }
   
   .detail .product-detail-description {
-    padding: 15px;
-    font-size: 1.8em;
-    line-height: 1.5;
+    padding: 20px;
+    font-size: 1.9em;
+    line-height: 1.8;
+    font-weight: initial;
   }
-  
+
+  a.btn.btn-outline-secondary.invertido {
+    border-color: #d64d00;
+    font-weight: 600;
+    width: 55%;
+    font-size: initial;
+    background: #f9fafb;
+    color: #d64d00;
+}
+a.btn.btn-outline-secondary {
+  border-color: #ee2224;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 1em;
+  font-weight: 400;
+  background: #ee2224;
+  color: aliceblue;
+  margin: 10px;
+}
+/* botones eliminar y editar */
+.detail .btn-danger {
+  color: #fff;
+  width: 10vw;
+  font-size: 1vw;
+  background-color: #ce1b2d;
+  border-color: #c01021;
+}
+.detail .btn-success {
+  color: #fff;
+  width: 10vw;
+  font-size: 1vw;
+  background-color: #0fb467;
+  border-color: #0eaa61;
+}
+/* .. */
+
+  .detail h2{
+  border-bottom: 1px solid #d64d00;
+  font-style: oblique;
+  }
   .detail .product-detail-price {
-    font-size: 5.5em;
-    margin: 10px 0;
+    font-size: 1.5em;
+    margin: 14px 0px;
+    font-style: oblique;
   }
   
   .detail .small {

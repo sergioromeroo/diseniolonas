@@ -16,24 +16,37 @@
 		</div>
 		<div class="product-detail">
 			<div class="row">
+				
 				<div class="col-12 col-md-6 col-lg-6 my-2">
 					<img src="/images/<%= producto.images %>" alt="product image" class="product-detail-img">
-					<p class="product-detail-description">
-						<%= producto.description %>
-					</p>
+					<h2>Descripcion</h2>
+
+					<h3 class="product-detail-description">
+						<h3>✔️  <strong>Beneficios:</strong><small> Crea una imagen moderna con una gran identidad corporativa.</small>
+							<br>
+							<br>✔️  <strong>Colocación:</strong><small> Aptas para interior y exterior.</small>
+							<br>
+							<br>✔️  <strong>Iluminación:</strong><small> Con iluminación mediante módulos LED.</small>
+							<br>
+							<br>✔️  <strong>Materiales:</strong><small> Chapa pintada, acero inoxidable, frente de acrílico, polyfan, madera y otros.</small>
+							<br>
+							<br>Elegi entre los <strong> más de 50 modelos disponibles </strong> con infinitas combinaciones. 
+							</h3>
+					</h3>
 				</div>
 				<div class="col-12 col-lg-4">
 					<article class="product-detail-info">
 						<h1 class="product-detail-title" ><%= producto.title %></h1>
 							
 							<p class="product-detail-price">
-								<p><%= producto.extra %></p>
+								<%= producto.extra %>
 							</p>
 
 						<ul class="actions-list">
 							<li>
 								<i class="fas fa-credit-card"></i>
 								<p>Envios a Domicilio</p>
+								
 							</li>
 							<li>
 								<i class="fas fa-store"></i>
@@ -41,7 +54,7 @@
 							</li>
 						</ul>
 
-						<a href="#" ><button type="button" class="btn btn-primary">COMUNICARSE</button></a>
+						<a class="btn btn-outline-secondary invertido" href="https://api.whatsapp.com/send?phone=+541138849632">Solicitar presupuesto</a>
 						<hr>
 
 						<a href="/products/edit/<%= producto.id %>" class="btn btn-success">EDITAR PRODUCTO</a>
@@ -56,6 +69,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="wsp">
+		<a href="https://api.whatsapp.com/send?phone=+541138849632">
+		  <img src="/images/whasap.png" alt="">
+		  </a>  
+	  </div>
 </main>
 <%- include('./partials/footer') %>
   <%- include('./partials/scripts') %>
