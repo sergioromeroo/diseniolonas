@@ -21,7 +21,12 @@
 .wsp img:hover{
   transform: scale(1.1)
 }
-
+/* mapa maps */
+.main .maps{
+  width: 0;
+  position: relative;
+  left:30%
+}
 
 .main .secc1{ 
   width: 100%;
