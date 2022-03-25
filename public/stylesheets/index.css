@@ -1,74 +1,35 @@
-/* *{
-  box-sizing: border-box;
-  
-}
-body{
-  margin: 75px;
-}
-.index .card{
-  background-color: aquamarine;
-}
-html{
-  scroll-behavior: smooth;
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 100vh;
 }
 
-.index body {
-  margin: 0;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.main-container{
+  height: 100vh;
 }
 
-.index h1{
-  font-size: 4vw; 
-}
-.index h2{
-  font-size: 4vw;
-}
-.index h3{
-  font-size: 3vw;
-}
-.index p{
-  font-size: 2vw;
-}
-.index ul{
-  list-style: none;
-}
-.index li{
-  font-size: 2.5em;
+.wsp img{
+  position: fixed;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  right: 15px;
+  bottom: 15rem;  
 }
 
-.index button{
-  font-size: 3vw;/
-  font-weight: bold;/
-  padding: 10px 40px;
-  border-radius: 20px;
-  border: 2px solid rgba(28, 37, 161, 0, 0.5);
-  box-shadow: 2px 2px 10px blue;
-  color: white;
-  background-color: rgb(133, 26, 182);
+.wsp img:hover{
+  transform: scale(1.1)
 }
 
 
-.index button:hover{
-  background-color: rgb(218, 29, 177);
-}
-
-.header .container{
-  max-width: 1400px;
-  margin: auto;
-}
-.index .color-span{
-  color: blueviolet;
-}
-
-
-.index .hero{ 
+.main .secc1{ 
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
-  height: 70vh;  
+  flex-direction: column; 
   background-image: linear-gradient( 
     0deg,
     rgba(0,0,0,0.5),
@@ -79,46 +40,97 @@ html{
   background-size: cover;
   background-position: center center;
   color: aliceblue;
+  height: 50%
 }
 
-.index .somos-proya .container{
+.main .secc1 .secc1-text h1.secc1-title{
+    font-size: 49px;
+    margin-bottom: 25px;
+}
+
+.main .secc1 .button{
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 20px;
+  color:  #020b20;
+  border: 2px solid rgba(28, 37, 161, 0, 0.5);
+  background-color: orange
+}
+
+
+.main .secc1 .button:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.index .card{
+  background-color: aquamarine;
+}
+
+
+
+
+.header .container{
+  max-width: 1400px;
+  margin: auto;
+}
+.main .color-span{
+  color: blueviolet;
+}
+
+
+
+.main .somos-proya .container{
   text-align: center;
   padding: 180px 12px;
 }
 
-.index .nuestros-programas{
+.main .nuestros-programas{
   background-color: rgb(40, 40, 40);
   color: white;
   text-align: center;
 }
-.index .nuestros-programas h2{
+.main .nuestros-programas h2{
   margin-top: 0;
 }
-.index .nuestros-programas .container{
+.main .nuestros-programas .container{
   padding: 200px 12px;
 }
-.index .nuestros-programas .carta{
+.main .nuestros-programas .carta{
   background-size: cover;
   background-position: center center;
   padding: 70px;
   margin: 35px 14px;
   border-radius: 15px;
 }
-.index .carta:first-child{
+.main .carta:first-child{
   background-image: linear-gradient( 
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
   ) ,url("../images/lona1.jpg");
 }
-.index .carta:nth-child(2){
+.main .carta:nth-child(2){
   background-image: linear-gradient( 
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
   ) ,url("../images/1314154-impresion-de-lonas-20180219192746217.jpg");
 }
-.index .carta:nth-child(3){
+.main .carta:nth-child(3){
   background-image: linear-gradient(
     0deg,
     rgba(0,0,0,0.5),
@@ -126,15 +138,15 @@ html{
   ) ,url("../images/servicios-banner-lonas-impresas-cancun.jpg");
 }
 
-.index .caracteristicas .container{
+.main .caracteristicas .container{
   text-align: center;
   padding: 220px 12px;
 }
-.index .caracteristicas li{
+.main .caracteristicas li{
   margin: 17px 0px;
   font-weight: bold;
 }
-.index .final{
+.main .final{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,11 +162,11 @@ html{
 
 @media (min-width: 720px){
   
-  .index .somos-proya .container{
+  .main .somos-proya .container{
     display: flex;
     justify-content: center;
   }
-  .index .somos-proya .texto{
+  .main .somos-proya .texto{
     width: 50%;
     text-align: initial;
     padding-left: 30px;
@@ -163,31 +175,28 @@ html{
     flex-direction: column;
     justify-content: center;
   }
-  .index .somos-proya .img-container{
+  .main .somos-proya .img-container{
     background-image: url("../images/333.jpeg");
     background-size: cover;
     background-position: center center;
     height: 500px;
     width: 400px;
   }
-  .index .nuestros-programas .programas{
+  .main .nuestros-programas .programas{
     display: flex;
     justify-content: center;
   }
-  .index .nuestros-programas p{
+  .main .nuestros-programas p{
     display: block;
     margin-bottom: 30px;
   }
-  .index .nuestros-programas h3{
+  .main .nuestros-programas h3{
     margin-top: 0;
   }
-  .index .nuestros-programas .carta{
+  .main .nuestros-programas .carta{
     padding: 20px;
   }
 }
 
-
-
- */
 
 

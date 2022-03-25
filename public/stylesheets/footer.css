@@ -49,3 +49,10 @@
 .footer-container .redes a{
     font-size: 20px;
 }
+
+
+.footer-container .metodos-de-pagos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
