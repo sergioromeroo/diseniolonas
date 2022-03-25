@@ -73,6 +73,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     },
 
     destroy : (req,res) => {
+        //productos = productos.filter(producto => producto.id !== +req.params.id)  este seria otra opcion tambien debe de las 4 lineas de abajo
         productos.forEach(producto=>{
             if(producto.id === +req.params.id){
                 let productoAEliminar = productos.indexOf(producto);
