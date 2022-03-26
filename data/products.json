@@ -10,16 +10,6 @@
     "category": "Carteles"
   },
   {
-    "id": 2,
-    "title": "Carteles",
-    "description": "tendras todos los letreros de nuetros trabajo",
-    "extra": "anashee",
-    "images": [
-      "10.jpeg"
-    ],
-    "category": "Carteles"
-  },
-  {
     "id": 3,
     "title": "Stickers",
     "description": "tendras todos los letreros de nuetros trabajo",
@@ -64,13 +54,5 @@
     "extra": "este producto es good pa te lo recomienda tu mama",
     "images": "images-1648148830305.jpeg",
     "category": "Lonas"
-  },
-  {
-    "id": 11,
-    "title": "ploteos lona diseño",
-    "description": "Sistemas de decoración gráfica para vehículos, vidrieras y paredes de forma total o parcial. Mediante distintos metodos como vinilos de corte o de impresión.\r\n\r\nBeneficios: Crea una imagen moderna y gran identidad corporativa para tu marca.\r\nColocación: Aptas para interior y exterior.\r\nImpresión: impresión full color más protección UV del sol.\r\nMateriales: Chapa pintada, acero inoxidable, frente de acrílico, polyfan, madera y otros.\r\n\r\nElegi entre los más de 50 modelos disponibles con infinitas combinaciones.",
-    "extra": "beneficios extras para tu marca anasheee",
-    "images": "321.jpeg",
-    "category": "Carteles"
   }
 ]
