@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content:center;
-  height: 100vh;
+ 
 }
 
 .main-container{
-  height: 100vh;
+  
+  background-color: rgb(53 53 53);
 }
 
 .wsp img{
@@ -22,11 +23,6 @@
   transform: scale(1.1)
 }
 /* mapa maps */
-.main .maps{
-  width: 0;
-  position: relative;
-  left:30%
-}
 
 .main .secc1{ 
   width: 100%;
@@ -45,17 +41,18 @@
   background-size: cover;
   background-position: center center;
   color: aliceblue;
-  height: 50%
+  height: 50rem
 }
 
 .main .secc1 .secc1-text h1.secc1-title{
     font-size: 49px;
     margin-bottom: 25px;
+    font-weight: lighter;
 }
 
 .main .secc1 .button{
   font-size: 3vw;
-  font-weight: bold;
+  font-weight: lighter;
   padding: 10px 40px;
   border-radius: 60px;
   color:  #020b20;
@@ -65,9 +62,97 @@
 
 
 .main .secc1 .button:hover{
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 
+
+.main .secc2{
+  background-color: #222a52;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60rem;
+}
+
+.main .secc2 .izq .title-secc2 h1{
+  font-size: 50px;
+  color: white;
+  font-weight:lighter;
+  margin-bottom: 4rem;
+}
+.main .secc2 .izq .tel p{
+  font-size:30px;
+}
+.main .secc2 .izq .tel p{
+  padding: 15px 0;
+}
+.main .secc2 .izq .wsp-text  p{
+  padding: 15px 0;
+}
+.main .secc2 .izq .wsp-text p{
+  font-size:30px
+}
+
+.main .secc2 .izq a.mail{
+  font-size: 39px;
+  color: orange;
+  font-weight: lighter;
+}
+
+.main .secc2 .izq .boton-mail{
+  color: #222a52;
+  background-color: orange;
+  border-radius:10rem;
+  margin-top:26px;
+  font-size: 23px;
+  margin-left: 4rem;
+}
+
+.main .secc2 .izq .boton-mail:hover{
+  transform: scale(1.03)
+}
+
+.main .secc2 .izq .boton-mail p{
+  padding: 29px 25px;
+  padding-bottom: 18px;
+  font-weight: lighter;
+}
+
+.main .secc2 .izq .boton-mail p img{
+  height: 20px;
+  width: 20px;
+}
+
+
+
+.main .maps {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* flex-direction: column; */
+  color: white;
+  height: 75rem
+}
+
+.main .maps .title-maps{
+  margin-bottom: 45rem;
+  /* margin-right: 31rem; */
+  margin-right: 25px;
+  color: white;
+  border-bottom: 1px solid orange;
+}
+
+.main .maps .title-maps h1{
+  font-weight: lighter;
+  font-size: 34px;
+}
+
+.main .maps .api-maps iframe {
+  height: 59rem;
+  width: 130rem;
+  /* border-radius: 20px; */
+}
 
 
 
@@ -86,22 +171,6 @@
 }
 
 
-
-
-.header .container{
-  max-width: 1400px;
-  margin: auto;
-}
-.main .color-span{
-  color: blueviolet;
-}
-
-
-
-.main .somos-proya .container{
-  text-align: center;
-  padding: 180px 12px;
-}
 
 .main .nuestros-programas{
   background-color: rgb(40, 40, 40);

@@ -46,10 +46,21 @@
 }
 
 .footer .sigamos-conectados{
-    width: 11%;
+    width: 21%;
     font-size: initial;
 }
+.footer .sigamos-conectados p.title {
+    font-size: 1.75rem;
+    text-align: center;
+}
+.footer .sigamos-conectados .icons-redes{
+    display: flex;
+    justify-content:center
+}
 
+.footer .sigamos-conectados .icons-redes a{
+    padding: 0 20px;
+}
 
 .footer-container .metodos-de-pagos{
     display: flex;
@@ -59,4 +70,5 @@
 
 .footer-container .metodos-de-pagos li{
     font-size: 12px;
+    text-align: center;
 }

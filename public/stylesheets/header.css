@@ -56,14 +56,14 @@ a {
     align-items: center;
     width: 48%;
     justify-content: space-around;
-   /*  font-weight: bolder; */
+   font-weight: lighter; 
 }
 
 .nav-header .nav-2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 38px;
+    /* margin-right: 7rem; */
     height: 100%;
     font-size: 22px;
     
@@ -72,7 +72,7 @@ a {
     transform: scale(1.1);
 }
 .nav-header .nav-2  i{
-    color: white;
+    color: orange;
     margin-top: 10px;
     margin-right: 5px;
 }
@@ -104,3 +104,20 @@ a {
     font-size: 7px;
 }
 
+.nav-2 .nav-header-menu{
+    background-color:#030F2D;
+}
+
+.nav-2 .nav-header-menu .btn2{
+    background-color: #030F2D;
+}
+
+.nav-2 .nav-header-menu .dropdown-item{
+    font-weight: lighter;
+}
+
+.nav-2 .nav-header-menu .btn-secondary {
+    color: orange;
+    background-color: #030F2D;
+    border-color: orange;
+}
