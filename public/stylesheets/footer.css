@@ -72,3 +72,16 @@
     font-size: 12px;
     text-align: center;
 }
+
+.fa-instagram,
+.fa-facebook-f,
+.fa-whatsapp{
+    color: var(--color-naranja);
+    font-size: 1.5em;
+    background: rgb(228, 28, 28);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+}

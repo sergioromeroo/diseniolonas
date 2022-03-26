@@ -6,11 +6,11 @@
     justify-content: center;
 }
 
-ul{
+.header ul{
 	list-style: none;
 }
 
-a {
+.header a {
 	text-decoration: none;
 	color: unset;
 }
@@ -23,7 +23,7 @@ a {
     justify-content: space-around;
 }
 
-.nav-header {
+.header .nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,26 +33,26 @@ a {
     
 }
 
-.nav-header a {
+.header .nav-header a {
    color: orange;
    display: flex;
    align-items: center;
 }
 
-.nav-header a:hover{
+.header .nav-header a:hover{
     color: orange;
     transition-duration: 0.5s; 
 }
-.nav-header a i:hover{
+.header .nav-header a i:hover{
     color: orange;
     transition-duration: 0.5s; 
 }
 
-.nav-header .logo img{
+.header .nav-header .logo img{
     height: 55px
 }
 
-.nav-header .nav-1{
+.header .nav-header .nav-1{
     height: 100%;
     display: flex;
     align-items: center;
@@ -61,15 +61,15 @@ a {
    font-weight: lighter; 
 }
 
-.nav-header .nav-1 li{
+.header .nav-header .nav-1 li{
     height:100%;
     display: flex;
     justify-content: center;
 }
-.nav-header .nav-1 li a:hover{
+.header .nav-header .nav-1 li a:hover{
     color:rgb(250, 250, 250);
 }
-.nav-header .nav-2 {
+.header .nav-header .nav-2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,55 +78,55 @@ a {
     font-size: 22px;
     
 }
-.nav-header .nav-2:hover{
+.header .nav-header .nav-2:hover{
     transform: scale(1.1);
 }
-.nav-header .nav-2  i{
+.header .nav-header .nav-2  i{
     color: orange;
     margin-top: 10px;
     margin-right: 5px;
 }
 
-.nav-header .icon-login {
+.header .nav-header .icon-login {
     margin-right: 7px;
     background: orange;
     border-radius: 29px;
 }
-.nav-header .nav-2 .icon-login img{
+.header .nav-header .nav-2 .icon-login img{
     color: white;
     height: 33px;
 }
 
-.nav-header .nav-2 .icon-login img:hover{
+.header .nav-header .nav-2 .icon-login img:hover{
     transform: scale(1.2);
 }
 
 
 
-.nav-header .nav-2 .login{
+.header .nav-header .nav-2 .login{
     margin-top: 2px;
     color: orange
 }
 
 
 
-.nav-header .add-products a{
+.header .nav-header .add-products a{
     font-size: 7px;
 }
 
-.nav-2 .nav-header-menu{
+.header .nav-2 .nav-header-menu{
     background-color:#030F2D;
 }
 
-.nav-2 .nav-header-menu .btn2{
+.header .nav-2 .nav-header-menu .btn2{
     background-color: #030F2D;
 }
 
-.nav-2 .nav-header-menu .dropdown-item{
+.header .nav-2 .nav-header-menu .dropdown-item{
     font-weight: lighter;
 }
 
-.nav-2 .nav-header-menu .btn-secondary {
+.header .nav-2 .nav-header-menu .btn-secondary {
     color: orange;
     background-color: #030F2D;
     border-color: orange;
