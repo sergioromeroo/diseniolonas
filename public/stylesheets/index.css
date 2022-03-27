@@ -72,7 +72,7 @@
 
 
 .main .secc2{
-  background-color: #222a52;
+  background-color: #1e2e54;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,15 +88,19 @@
 }
 .main .secc2 .izq .tel p{
   font-size:30px;
+  font-weight: lighter;
 }
 .main .secc2 .izq .tel p{
   padding: 15px 0;
+  
 }
 .main .secc2 .izq .wsp-text  p{
   padding: 15px 0;
+  
 }
 .main .secc2 .izq .wsp-text p{
-  font-size:30px
+  font-size:30px;
+  font-weight: lighter;
 }
 
 .main .secc2 .izq a.mail{
@@ -137,14 +141,26 @@
     align-items: center;
 }
 
+.main .secc3 .title-secc3{
+  color: #1e2e54;
+  margin-top: 15rem;
+  background-color: orange;
+  border-radius: 10rem;
+}
+.main .secc3 .title-secc3 h1{
+  font-size: 50px;
+  font-weight: lighter;
+  padding: 20px
+}
 .main .secc3 .fila1{
   display: flex;
   width: 75%;
-  margin-top:8rem;
+  margin-top:7rem;
 }
 
 .main .secc3 .fila1 img{
-  padding: 5px 0 10px 17px;
+  /* padding: 5px 0 10px 17px; */
+  padding: 20px 20px;
   height: 84rem
 }
 
@@ -167,7 +183,8 @@
 }
 
 .main .secc3 .fila2 img {
-  padding: 5px 0 10px 17px;
+  /* padding: 5px 0 10px 17px; */
+  padding: 20px 20px;
   /* height: 58rem; */
   height: 84rem;
   /* width: 47rem; */
@@ -222,123 +239,248 @@
    border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.index .card{
-  background-color: aquamarine;
+.main .secc4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 115rem;
+  margin-top: 6rem;
 }
 
-
-
-.main .nuestros-programas{
-  background-color: rgb(40, 40, 40);
-  color: white;
-  text-align: center;
-}
-.main .nuestros-programas h2{
-  margin-top: 0;
-}
-.main .nuestros-programas .container{
-  padding: 200px 12px;
-}
-.main .nuestros-programas .carta{
-  background-size: cover;
-  background-position: center center;
-  padding: 70px;
-  margin: 35px 14px;
-  border-radius: 15px;
-}
-.main .carta:first-child{
-  background-image: linear-gradient( 
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  ) ,url("../images/lona1.jpg");
-}
-.main .carta:nth-child(2){
-  background-image: linear-gradient( 
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  ) ,url("../images/1314154-impresion-de-lonas-20180219192746217.jpg");
-}
-.main .carta:nth-child(3){
-  background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  ) ,url("../images/servicios-banner-lonas-impresas-cancun.jpg");
+.main .secc4 .title-articles{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 9rem; */
+    color: white;
+    border-bottom: 1px solid orange;
 }
 
-.main .caracteristicas .container{
-  text-align: center;
-  padding: 220px 12px;
+.main .secc4 a:hover{
+  transform: scale(1.03)
 }
-.main .caracteristicas li{
-  margin: 17px 0px;
-  font-weight: bold;
+
+.main .secc4 .title-articles h1{
+  font-size: 50px;
+  font-weight: lighter;
 }
-.main .final{
+
+.main .secc4 .articles1{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .secc4 .articles1 a{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: rgb(40, 40, 40);
-  color: white;
-  height: 60vh;
+}
+
+.main .secc4 .articles1 a img{
+  height: 25rem;
+  width: 25rem;
+  border-radius: 25rem;
+}
+
+.main .secc4 .articles2{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* margin-top: 10rem; */
+}
+
+.main .secc4 .articles2 a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
-
-
-@media (min-width: 720px){
-  
-  .main .somos-proya .container{
-    display: flex;
-    justify-content: center;
-  }
-  .main .somos-proya .texto{
-    width: 50%;
-    text-align: initial;
-    padding-left: 30px;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main .somos-proya .img-container{
-    background-image: url("../images/333.jpeg");
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    width: 400px;
-  }
-  .main .nuestros-programas .programas{
-    display: flex;
-    justify-content: center;
-  }
-  .main .nuestros-programas p{
-    display: block;
-    margin-bottom: 30px;
-  }
-  .main .nuestros-programas h3{
-    margin-top: 0;
-  }
-  .main .nuestros-programas .carta{
-    padding: 20px;
-  }
+.main .secc4 .articles2 a img{
+  height: 25rem;
+  width: 25rem;
+  border-radius: 25rem;
 }
+
+.main .secc4  p{
+  color: orange;
+  font-size:30px;
+  margin-top:10px;
+  font-weight: lighter;
+}
+
+
+/* @media screen and (min-width: 320px){
+
+    .main .secc1{
+      height:32rem;
+    }
+
+    .main .secc1 .secc1-text h1.secc1-title{
+      font-size: 29px;
+    }
+    .main .secc1 .secc1-text h1.secc1-title{
+      font: 2rem;
+
+    }
+    .main .secc1 a.button img {
+      height: 26px;
+      width: 26px;
+    }
+
+    .main .secc3 .title-secc3 h1 {
+      font-size: 16px;
+      padding: 20px 20px 15px;
+  }
+
+
+      .main .secc3 .title-secc3 {
+        margin-top: 7rem;
+      }
+
+      .main .secc3 .fila1{
+        flex-direction: column;
+        margin-top: 3rem
+      }
+
+      .main .secc3 .fila1 .img1{
+        width: 24rem;
+      }
+
+      .main .secc3 .fila1 .img1 img{
+        height: 38rem;
+      }
+      .main .secc3 .fila1 .img2 {
+        height: 18rem;
+      }
+      .main .secc3 .fila1 .img3{
+        height: 18rem;
+      }
+
+    .main .secc3 .fila2{
+      flex-direction: column;
+    }
+
+    .main .secc3 .fila2 .img5{
+      height: 18rem;
+    }
+    .main .secc3 .fila2 .img6{
+      height: 18rem;
+    }
+
+    .main .secc3 .fila2 .img7 {
+      width: 24rem;
+    }
+    .main .secc3 .fila2 .img7 img{
+      height: 39rem
+    }
+
+
+    .main .secc4{
+      margin-top: 1rem;
+      height: 141rem; 
+    }
+
+    .main .secc4 .title-articles{
+      margin-top: 1px;
+    }
+    
+    .main .secc4 .title-articles h1{
+      font-size: 15px;
+    }
+
+    .main .secc4 .articles1{
+      flex-direction: column;
+      padding: 10px 0;
+    }
+
+    .main .secc4 .articles1 a{
+      padding: 10px 0;
+    }
+    
+    .main .secc4 .articles2 a{
+      padding: 10px 0
+    }
+    .main .secc4 .articles1 a img {
+      height: 15rem;
+      width: 15rem;
+    }
+    .main .secc4 p{
+      font-size: 20px;
+    }
+
+
+    .main .secc4 .articles2{
+      flex-direction: column;
+    }
+    .main .secc4 .articles2 a img {
+      height: 15rem;
+      width: 15rem;
+    }
+    .main .secc4 p{
+      font-size: 20px;
+    }
+
+    .main .secc2{
+      text-align: center;
+      height: 46rem;
+    }
+
+    .main .secc2 .izq .title-secc2 h1{
+      font-size: 24px;
+    }
+
+    .main .secc2 .izq .tel p{
+      font-size:20px;
+    }
+    .main .secc2 .izq .wsp-text p{
+      font-size:20px
+    }
+
+    .main .secc2 .izq a.mail{
+      font-size: 24px;
+    }
+
+    .main .secc2 .izq .boton-mail{
+      font-size: 15px;
+      margin-left: 0 ;
+    }
+    .main .secc2 .izq .boton-mail p {
+      padding: 19px 26px;
+      padding-bottom: 9px;
+    }
+
+    .main .maps{
+      display: none;
+    }
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
