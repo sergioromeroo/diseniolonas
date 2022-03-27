@@ -41,7 +41,7 @@
   background-size: cover;
   background-position: center center;
   color: aliceblue;
-  height: 50rem
+  height: 65rem
 }
 
 .main .secc1 .secc1-text h1.secc1-title{
@@ -51,7 +51,7 @@
 }
 
 .main .secc1 .button{
-  font-size: 3vw;
+  font-size: 4rem;
   font-weight: lighter;
   padding: 10px 40px;
   border-radius: 60px;
@@ -60,9 +60,14 @@
   background-color: orange
 }
 
+.main .secc1 a.button img {
+  height: 35px;
+  width: 35px;
+}
+
 
 .main .secc1 .button:hover{
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 
@@ -125,19 +130,76 @@
 }
 
 
+.main .secc3{
+    background-color: #1e2e54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .secc3 .fila1{
+  display: flex;
+  width: 75%;
+  margin-top:8rem;
+}
+
+.main .secc3 .fila1 img{
+  padding: 5px 0 10px 17px;
+  height: 84rem
+}
+
+.main .secc3 .fila1  .img1 {
+  width: 70rem;
+}
+
+
+.main .secc3 .fila1 .img2{
+  height: 42rem;
+}
+.main .secc3 .fila1 .img3{
+  height: 42rem;
+}
+
+.main .secc3 .fila2{
+  display: flex;
+  width: 75%;
+  margin-bottom: 8rem;
+}
+
+.main .secc3 .fila2 img {
+  padding: 5px 0 10px 17px;
+  /* height: 58rem; */
+  height: 84rem;
+  /* width: 47rem; */
+}
+
+
+.main .secc3 .fila2 .img5{
+  /* height: 29rem;
+  width: 61rem; */
+  height: 42rem;
+}
+.main .secc3 .fila2 .img6{
+  /* height: 29rem;
+  width: 61rem; */height: 42rem;
+}
+
+
+.main .secc3 .fila2  .img7 {
+  width: 70rem;
+}
+
+
 
 .main .maps {
   display: flex;
   justify-content:center;
-  align-items: center;
-  /* flex-direction: column; */
   color: white;
-  height: 75rem
+  height: 75rem;
+  margin-top: 14rem;
 }
 
 .main .maps .title-maps{
-  margin-bottom: 45rem;
-  /* margin-right: 31rem; */
   margin-right: 25px;
   color: white;
   border-bottom: 1px solid orange;
@@ -148,10 +210,16 @@
   font-size: 34px;
 }
 
+.main .maps .box1 .direc-maps {
+  margin-top: 38px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
 .main .maps .api-maps iframe {
   height: 59rem;
   width: 130rem;
-  /* border-radius: 20px; */
+   border-radius: 20px;
 }
 
 

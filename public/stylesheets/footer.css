@@ -76,9 +76,11 @@
 .fa-instagram,
 .fa-facebook-f,
 .fa-whatsapp{
-    color: var(--color-naranja);
-    font-size: 1.5em;
-    background: rgb(228, 28, 28);
+    color: #020b20;
+    /* color: var(--color-naranja); */
+    font-size: 25px;
+    background-color:orange;
+    /* background: rgb(228, 28, 28); */
     height: 50px;
     width: 50px;
     border-radius: 50%;
