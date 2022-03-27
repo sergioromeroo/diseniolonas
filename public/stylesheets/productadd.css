@@ -1,0 +1,11 @@
+.agregar{
+    margin: auto;
+    width: 50%;
+    font-size: 1vw;
+}
+.agregar .btn-primary {
+    background-color: orange;
+    width: 8vw;
+    height: 2vw;
+}
+
