@@ -54,5 +54,13 @@
     "extra": "este producto es good pa te lo recomienda tu mama",
     "images": "images-1648148830305.jpeg",
     "category": "Lonas"
+  },
+  {
+    "id": 11,
+    "title": "lonas de 12x30",
+    "description": "asdasdasdasd",
+    "extra": "este producto es good pa te lo recomienda tu mama",
+    "images": "images-1648485124351.jpeg",
+    "category": "Lonas"
   }
 ]
