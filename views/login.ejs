@@ -1,83 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+    <%- include('./partials/head')  %> 
+<body>
+    <%- include('./partials/header')  %> 
 
-  <%- include('./partials/head') %> 
-
-  <body class="fondologin">
-    <%- include('./partials/header') %> 
-    <!-- Main -->
-    <main class="grilla-login">
-      <div class="cajacon"></div><!-- Div para el before del circulo del fondo -->
-      <div class="icono-electodo">
-        <a href="/">
-          <img src="/images/principal-logo.png" alt="">
-        </a>
-      </div>
-      <div class="login">
-        <h2 class="title">Iniciar Sesion</h2>
-        <form action="/users/login" class="formulario" id="formulario" method="POST">
-          <!-- Grupo: Correo Electronico -->
-          <div class="formulario__grupo" id="grupo__correoL">
-            <div class="formulario__grupo-input">
-              <i class="fas fa-at"></i>
-              <input type="email" class="formulario__input "
-                 name="email" id="emailL"
-                placeholder="Escriba su correo.">
-              <i id="check-correoL" class="formulario__validacion-estado fas fa-times-circle"></i>
+    <div class="login">
+        <main class="container">
+            <div class="row">
+                <div class="col-6 mx-auto mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">INICIAR SESION</h5>
+                            <form action="" method="POST">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                                  <input type="email" placeholder="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenia">
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="recordar">
+                                        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                                      </div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <span class="text-danger"><%= locals.errores && errores.email ? errores.email.msg : null%> </span>
+                              </form>
+                        </div>
+                       
+                    </div>
+                </div>
             </div>
-            
-                <p id="formulario__input-error-correoL" class="formulario__input-error">No es un correo válido.</p>
-          </div>
-          <!-- Grupo: Contraseña -->
-          <div class="formulario__grupo" id="grupo__passwordL">
-            <div class="formulario__grupo-input">
-              <i class="fas fa-lock"></i>
-              <input type="password"
-                class="formulario__input " name="password"
-                id="passwordL" placeholder="Escriba su contraseña">
-              <i id="check-passwordL" class="formulario__validacion-estado fas fa-times-circle"></i>
-                <i class="fa fa-eye-slash"></i>
-              </span>
-            </div>
-            
-                <p id="formulario__input-error-passwordL" class="formulario__input-error">La contraseña tiene que tener 8 digitos a 16.</p>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="recordarmeL" name="recordar">
-            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
-          </div>
+           
 
-          <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena los campos correctamente. </p>
-          </div>
-
-          <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <input type="submit" id='btn1' value="Enviar" class="formulario__btn" />
-          </div>
-        </form>
-      </div>
-      <!-- Lado Izquierdo: Ir a Register -->
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>¿Nuevo?</h3>
-            <p>
-              ¡Dale al botón para registrarte de una manera sencilla!
-            </p>
-            <a href="/users/register">
-              <button class="btn transparent" id="sign-up-btn">
-                Registrarse
-              </button>
-            </a>
-          </div>
-          <img src="/images/login.svg" class="image" alt="" />
-        </div>
-      </div>
-    </main>
-    
+        </main>
+    </div>
     <%- include('./partials/footer') %>
-  <%- include('./partials/scripts') %>
-  </body>
+  <%- include('./partials/scripts') %> 
 
-  </html>
-
+</body>
+</html>

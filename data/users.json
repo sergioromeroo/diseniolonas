@@ -4,5 +4,11 @@
     "nombre": "matias",
     "email": "matias99@gmail.com",
     "contrasenia": "$2a$10$S4ljXHnXuDqGWttnIViRmu.71iaZ2328SHwjN6LUFU/koPyc6ncDK"
+  },
+  {
+    "id": 2,
+    "nombre": "sergio",
+    "email": "romeosantos@gmail.com",
+    "contrasenia": "$2a$10$.wN7Jqwd7qAfT4.RGHTjtOpNqfS53mM3mExuQfFqK.hFaz52vC.Tq"
   }
 ]

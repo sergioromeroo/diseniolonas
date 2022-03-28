@@ -38,6 +38,30 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     },
 
     login : (req,res) => {
-        return res.render('login')
+        return res.render('login',{
+            productos
+        })
+    },
+    processLogin : (req,res) => {
+        let errors = validationResult(req);
+        const {email, recordar} = req.body;
+        if(errors.isEmpty()){
+            let usuario = usuarios.find(usuario => usuario.email === email)
+            req.session.userLogin = {
+                id : usuario.id,
+                nombre : usuario.nombre,
+                rol : usuario.rol
+            }
+
+            if(recordar){
+                res.cookie('craftsyForEver',req.session.userLogin,{maxAge: 1000 * 60})
+            }
+            return res.redirect('/')
+        }else{
+            return res.render('login',{
+                productos,
+                errores : errors.mapped()
+            })
+        }
     }
 }
