@@ -6,7 +6,8 @@ module.exports = [
     .isLength({
         min : 2,
         max : 10
-    }).withMessage('nombre debe tener entre 2 a 10 letras').bail(),
+    }).withMessage('nombre debe tener entre 2 a 10 letras').bail()
+    .isAlpha().withMessage('el nombre debe contener solo letras'),
 
 
     check('email')
@@ -17,5 +18,14 @@ module.exports = [
         min : 6,
         max : 12
     }).withMessage('la contraseña debe tener entre 6 a 12 caracteres'),
+    
+/* el body se usa en este caso es para reingresar la contraseña  */
+    body('contrasenia2')
+    .custom((value,{req}) => {
+        if(value !== req.body.contrasenia){
+            return false
+        }
+        return true
+    }).withMessage('las contraseñas no coinciden')
 
 ]
