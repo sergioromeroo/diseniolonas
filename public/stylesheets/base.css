@@ -18,7 +18,11 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	overflow-x: hidden;
+	background-image: url(/images/fondo2.jpg);
 }
+
+
+
 
   a {
 	text-decoration: none;
