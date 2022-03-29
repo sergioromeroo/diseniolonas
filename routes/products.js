@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const {products,add,detail,save,edit,update} = require('../controllers/productsController');
+const {products,add,detail,save,edit,update,search} = require('../controllers/productsController');
 const remove = require('../controllers/productsController');
 const path = require('path');
 
@@ -31,5 +31,6 @@ router.get('/detail/:id',detail);
 router.get('/edit/:id',edit);
 router.put('/edit/:id',update);
 router.delete('/delete/:id',remove.destroy);
+router.get('/search',search);
 
 module.exports = router;

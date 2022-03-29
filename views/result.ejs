@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head') %> 
+
+<body>
+  <%- include('./partials/header') %> 
+  
+
+<!-- categoria stickers -->
+<div class="container products-wrapper">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="products-title"> <%= busqueda %> </h2>
+    </div>
+    <!-- Show the "in-sale" products -->
+
+    <div class="container-banners">
+        <% result.forEach(pr => { %>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <section class="product-box">
+              <a href="/products/detail/<%= pr.id %>">
+                <figure class="product-box_image">
+                  <img src="/images/<%= pr.images %>" alt="imagen de producto">
+                </figure>
+                <article class="product-box_data">
+                  <h2><%= pr.title %></h2>
+                  <span>descuento % OFF</span>
+                  <p><%= pr.extra %></p>
+                  <i class="fas fa-truck"></i>
+                </article>
+              </a>
+            </section>
+          </div>
+        <%}); %>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+ <div class="wsp">
+  <a href="https://api.whatsapp.com/send?phone=+541138849632">
+    <img src="/images/iconwsp.png" alt="">
+    </a>  
+ </div>
+
+
+
+  
+
+
+  
+<%- include('./partials/footer') %>
+  <%- include('./partials/scripts') %>
+</body>
+
+</html>

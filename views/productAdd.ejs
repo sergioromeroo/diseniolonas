@@ -21,14 +21,9 @@
             </div>
 
 
-            <div class="mb-3">
-                <label for="floatingTextarea">Descripción</label>
-                <textarea class="form-control" id="floatingTextarea" name="description"><%= locals.old && old.description ? old.description : null %></textarea>
-                <h3 class="small alert-danger"><%= locals.errores && errores.description ? errores.description.msg : null%> </h3>
-              </div>
 
               <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">extra demas que quieras agregar</label>
+                <label for="formGroupExampleInput2" class="form-label">mini descripcion</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" name="extra" value="<%= locals.old && old.extra ? old.extra : null %>">
                 <h3 class="small alert-danger"><%= locals.errores && errores.extra ? errores.extra.msg : null%> </h3>
               </div>
@@ -53,7 +48,7 @@
           
             <div class="mb-3">
              
-                <button   class="btn btn-primary" type="submit" href="products">Enviar </button>
+                <button   class="btn btn-primary" type="submit" > Enviar </button>
               
               
             </div>

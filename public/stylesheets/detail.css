@@ -14,7 +14,7 @@ main.detail {
   align-items: center;
   background-color: white;
   /* width: 80%; */
-  height: 90%;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -29,7 +29,7 @@ main.detail {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 40%;
+  width: 37%;
 }
 .lado-der {
   display: flex;

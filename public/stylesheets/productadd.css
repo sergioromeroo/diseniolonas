@@ -1,7 +1,8 @@
 .agregar{
     margin: auto;
     width: 50%;
-    font-size: 1vw;
+    font-size: 1.3vw;
+    color: white;
 }
 .agregar .btn-primary {
     background-color: orange;
