@@ -30,22 +30,6 @@
     "category": "Banners"
   },
   {
-    "id": 9,
-    "title": "puede ser paaa",
-    "description": "opaa aver si sube esto se me paraaaa",
-    "extra": "si pa anasheee",
-    "images": "images-1648098850079.jpg",
-    "category": "Banners"
-  },
-  {
-    "id": 11,
-    "title": "lonas de 12x30",
-    "description": "asdasdasdasd",
-    "extra": "este producto es good pa te lo recomienda tu mama",
-    "images": "images-1648485124351.jpeg",
-    "category": "Lonas"
-  },
-  {
     "id": 15,
     "title": "la lona",
     "description": "la con",
@@ -108,5 +92,13 @@
     "extra": "adasd",
     "images": "images-1648521183933.jpeg",
     "category": "Carteles"
+  },
+  {
+    "id": 26,
+    "title": "lonas 2x1 ",
+    "description": "asa la mejor lona del mercado mundial en serio",
+    "extra": "pero en serioooo",
+    "images": "images-1648527279482.jpg",
+    "category": "Lonas"
   }
 ]

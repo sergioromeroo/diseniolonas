@@ -13,15 +13,15 @@ main.detail {
   justify-content:center;
   align-items: center;
   background-color: white;
-  width: 80%;
-  height: 60%;
+  /* width: 80%; */
+  height: 90%;
   border-radius: 10px;
 }
 
 
 .container-detail-product .lado-izq .arriba img{
   height: 90%;
-  width: auto;
+  width: 100%;
 }
 
 .lado-izq {
@@ -35,14 +35,15 @@ main.detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: 95%;
   width: 40%;
   padding-left: 6rem;
-  border-left: 2px solid #c6c0c059;
+  margin-left: 6rem;
+  border-left: 1px solid orange;
 }
 
 .arriba{
-  height: 50%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -52,16 +53,117 @@ main.detail {
   height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+
 
 }
 
 .btns-admin{
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 14rem;
+    border-top: 1px solid orange;
 }
 
 
+
+
 .lado-izq .arriba{
-  border-bottom: 2px solid #c6c0c059;
+  border-bottom: 1px solid orange;
+}
+.title-description {
+  display: flex;
+  justify-content: center;
+}
+.lado-izq .abajo .title-description h2{
+  font-weight: lighter;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid orange;
+}
+
+
+.lado-der .arriba .product-detail-title {
+  font-weight: lighter;
+  font-size: 3.8em;
+  text-align: center;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+
+.lado-der .arriba .detail-product p{
+  font-size: 24px;
+  text-align: center;
+  font-family: lighter;
+}
+
+
+
+
+.lado-der .arriba .envios-domi p{
+  font-size: 24px;
+  color: gray;
+  font-weight: lighter;
+}
+
+.lado-der .arriba .retiro-local p{
+  font-size: 24px;
+  color: gray;
+  font-weight: lighter;
+}
+
+.envios-retiro i{
+  color: gray;
+  font-size: 20px;
+  
+}
+.lado-der .abajo .btn-presupuesto{
+  font-size: 18px;
+  text-align: center;
+}
+
+.lado-der .abajo .btn-presupuesto a{
+  border: 1px solid orange;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btns-admin .btn-edit a{
+  font-size: 17px;
+}
+
+.btns-admin .btn-delete button.btn.btn-danger {
+  font-size: 17px;
+}
+
+
+.detail-product {
+  border: 1px solid orange;
+  border-radius: 12px;
+  height: 26rem;
+}
+
+
+.lado-der .abajo{
+
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange
+
+}
+
+
+.text-description {
+  border: 1px solid orange;
+  border-radius: 10px;
+  padding: 11px;
+}
+
+.text-description h3{
+  font-weight: lighter;
+}
+
+.text-description b, strong {
+  font-weight: bolder;
+  border-bottom: 1px solid blue;
 }

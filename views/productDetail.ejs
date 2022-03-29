@@ -44,21 +44,30 @@
 
 					
 						<div class="arriba">
+							
+							<div class="product">
+								<div class="title-product">
+									<h1 style="font-style: italic;"class="product-detail-title" ><%= producto.title %></h1>
+								</div>
+								<div class="detail-product">
+									<p style="font-style: italic;"><%= producto.extra %></p>
+								</div>
+							</div>
+							
 
-							<div class="title-product">
-								<h1 class="product-detail-title" ><%= producto.title %></h1>
+
+
+							<div class="envios-retiro">
+								<div class="envios-domi">
+									<p><i class="fas fa-credit-card"></i> Envios a Domicilio</p>
+								
+								</div>
+								<div class="retiro-local">
+									<p><i class="fas fa-store"></i> Retira gratis en nuestro local</p>
+									
+								</div>
 							</div>
-							<div class="detail-product">
-								<p><%= producto.extra %></p>
-							</div>
-							<div class="envios-domi">
-									<i class="fas fa-credit-card"></i>
-									<p>Envios a Domicilio</p>			
-							</div>
-							<div class="retiro-local">
-								<i class="fas fa-store"></i>
-									<p>Retira gratis en nuestro local</p>
-							</div>
+							
 						</div>
 
 
@@ -72,7 +81,7 @@
 								<div class="btn-edit">
 									<a href="/products/edit/<%= producto.id %>" class="btn btn-success"> EDITAR PRODUCTO </a>
 								</div>
-								<div>
+								<div class="btn-delete">
 									<form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
 										<button type="submit" class="btn btn-danger">ELIMINAR</button>
 									</form>
