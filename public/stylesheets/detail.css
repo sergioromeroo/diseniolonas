@@ -127,6 +127,7 @@ main.detail {
   border: 1px solid orange;
   padding: 10px;
   border-radius: 8px;
+  color: orange;
 }
 
 .btns-admin .btn-edit a{
@@ -138,11 +139,6 @@ main.detail {
 }
 
 
-.detail-product {
-  border: 1px solid orange;
-  border-radius: 12px;
-  height: 26rem;
-}
 
 
 .lado-der .abajo{
