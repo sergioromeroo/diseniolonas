@@ -161,6 +161,8 @@ hr {
   font-size: 2.4em;
   font-weight: 400;
   color: var(--gray);
+  display: flex;
+  justify-content: center;
 }
 
 .product-box {
@@ -173,6 +175,8 @@ hr {
 
 .product-box a {
   display: block;
+  color: white;
+  background-color: #020b20;
 }
 
 .product-box_image {
@@ -196,7 +200,7 @@ hr {
 .product-box_data span {
   font-size: 1.5em;
   font-weight: 300;
-  color: var(--green);
+  color: orange;
   margin: 0 0 0 10px;
 }
 
