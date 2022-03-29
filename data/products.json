@@ -48,19 +48,43 @@
     "category": "Banners"
   },
   {
-    "id": 10,
-    "title": "lona buenisima",
-    "description": "aca pongo una lona nashe",
-    "extra": "este producto es good pa te lo recomienda tu mama",
-    "images": "images-1648148830305.jpeg",
-    "category": "Lonas"
-  },
-  {
     "id": 11,
     "title": "lonas de 12x30",
     "description": "asdasdasdasd",
     "extra": "este producto es good pa te lo recomienda tu mama",
     "images": "images-1648485124351.jpeg",
     "category": "Lonas"
+  },
+  {
+    "id": 12,
+    "title": "prueba",
+    "description": "asasdasdasd",
+    "extra": "asdasd",
+    "images": "images-1648513819476.jpeg",
+    "category": "Lonas"
+  },
+  {
+    "id": 13,
+    "title": "prueba2",
+    "description": "asdasd",
+    "extra": "este producto es good pa te lo recomienda tu mama",
+    "images": "images-1648513907005.jpeg",
+    "category": "Stickers"
+  },
+  {
+    "id": 14,
+    "title": "prueba3",
+    "description": "asdasdzx",
+    "extra": "q onda paa anahsee",
+    "images": "images-1648513927928.jpeg",
+    "category": "Carteles"
+  },
+  {
+    "id": 15,
+    "title": "prueba 4",
+    "description": "asdzxc",
+    "extra": "si pa anasheee",
+    "images": "images-1648513966384.jpeg",
+    "category": "Banners"
   }
 ]
