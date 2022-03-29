@@ -163,3 +163,8 @@ main.detail {
   font-weight: bolder;
   border-bottom: 1px solid blue;
 }
+
+.lado-der .abajo .btn-presupuesto a:hover{
+  background-color:orange;
+  color: #1e2e54
+}
