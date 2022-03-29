@@ -9,39 +9,88 @@
   <main class="detail">
 
   
-  <div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-			</div>
-		</div>
-		<div class="product-detail">
-			<div class="row">
+  <div class="container-detail-product">
+
 				
-				<div class="col-12 col-md-6 col-lg-6 my-2">
-					<img src="/images/<%= producto.images %>" alt="product image" class="product-detail-img">
-					<h2>Descripcion</h2>
-
-					<h3 class="product-detail-description">
-						<h3>✔️  <strong>Beneficios:</strong><small> Crea una imagen moderna con una gran identidad corporativa.</small>
-							<br>
-							<br>✔️  <strong>Colocación:</strong><small> Aptas para interior y exterior.</small>
-							<br>
-							<br>✔️  <strong>Iluminación:</strong><small> Con iluminación mediante módulos LED.</small>
-							<br>
-							<br>✔️  <strong>Materiales:</strong><small> Chapa pintada, acero inoxidable, frente de acrílico, polyfan, madera y otros.</small>
-							<br>
-							<br>Elegi entre los <strong> más de 50 modelos disponibles </strong> con infinitas combinaciones. 
-							</h3>
-					</h3>
+				<div class="lado-izq">
+					
+						<div class="arriba">
+							<img src="/images/<%= producto.images %>" alt="product image" class="product-detail-img">
+						</div>
+						
+						<div class="abajo">	
+							<div class="title-description">
+								<h2>Descripcion</h2>
+							</div>
+							<div class="text-description">
+									<h3>✔️  <strong>Beneficios:</strong><small> Crea una imagen moderna con una gran identidad corporativa.</small>
+										<br>
+										<br>✔️  <strong>Colocación:</strong><small> Aptas para interior y exterior.</small>
+										<br>
+										<br>✔️  <strong>Iluminación:</strong><small> Con iluminación mediante módulos LED.</small>
+										<br>
+										<br>✔️  <strong>Materiales:</strong><small> Chapa pintada, acero inoxidable, frente de acrílico, polyfan, madera y otros.</small>
+										<br>
+										<br>Elegi entre los <strong> más de 50 modelos disponibles </strong> con infinitas combinaciones. 
+									</h3>			
+							</div>			
+						</div>		
+				
+								
 				</div>
-				<div class="col-12 col-lg-4">
-					<article class="product-detail-info">
-						<h1 class="product-detail-title" ><%= producto.title %></h1>
-							
-							<p class="product-detail-price">
-								<%= producto.extra %>
-							</p>
 
+
+				<div class="lado-der">
+
+					
+						<div class="arriba">
+
+							<div class="title-product">
+								<h1 class="product-detail-title" ><%= producto.title %></h1>
+							</div>
+							<div class="detail-product">
+								<p><%= producto.extra %></p>
+							</div>
+							<div class="envios-domi">
+									<i class="fas fa-credit-card"></i>
+									<p>Envios a Domicilio</p>			
+							</div>
+							<div class="retiro-local">
+								<i class="fas fa-store"></i>
+									<p>Retira gratis en nuestro local</p>
+							</div>
+						</div>
+
+
+
+						<div class="abajo">
+
+							<div class="btn-presupuesto">
+								<a href="https://api.whatsapp.com/send?phone=+541138849632">Solicitar presupuesto</a>
+							</div>
+							<div class="btns-admin">
+								<div class="btn-edit">
+									<a href="/products/edit/<%= producto.id %>" class="btn btn-success"> EDITAR PRODUCTO </a>
+								</div>
+								<div>
+									<form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+										<button type="submit" class="btn btn-danger">ELIMINAR</button>
+									</form>
+								</div>
+							</div>
+
+
+						</div>
+					
+				</div>
+    </div>
+
+
+			<!-- 	<div class="col-12 col-lg-4">
+					<article class="product-detail-info">
+						
+							
+						
 						<ul class="actions-list">
 							<li>
 								<i class="fas fa-credit-card"></i>
@@ -65,10 +114,12 @@
 						
 
 					</article>
-				</div>
-			</div>
-		</div>
-	</div>
+				</div -->>
+	
+
+
+
+
 	<div class="wsp">
 		<a href="https://api.whatsapp.com/send?phone=+541138849632">
 		  <img src="/images/whasap.png" alt="">
@@ -76,7 +127,4 @@
 	  </div>
 </main>
 <%- include('./partials/footer') %>
-  <%- include('./partials/scripts') %>
-</body>
-
-</html>
+<%- include('./partials/scripts') %>

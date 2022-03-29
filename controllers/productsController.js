@@ -35,7 +35,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
             }
             productos.push(producto)
             fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productos,null,2),'utf-8')/* q se me guarde en el json  */
-            return res.redirect('/')
+            return res.redirect('/products/products')
         }else{
             return res.render('productAdd',{
                 categorias,

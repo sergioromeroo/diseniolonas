@@ -10,16 +10,6 @@
     "category": "Carteles"
   },
   {
-    "id": 3,
-    "title": "Stickers",
-    "description": "tendras todos los letreros de nuetros trabajo",
-    "extra": "puede ser pa",
-    "images": [
-      "777.jpeg"
-    ],
-    "category": "Stickers"
-  },
-  {
     "id": 5,
     "title": "gorras",
     "description": "tendras todos los letreros de nuetros trabajo",
@@ -40,14 +30,6 @@
     "category": "Banners"
   },
   {
-    "id": 10,
-    "title": "lona buenisima",
-    "description": "aca pongo una lona nashe",
-    "extra": "este producto es good pa te lo recomienda tu mama",
-    "images": "images-1648148830305.jpeg",
-    "category": "Lonas"
-  },
-  {
     "id": 11,
     "title": "lonas de 12x30",
     "description": "asdasdasdasd",
@@ -56,18 +38,67 @@
     "category": "Lonas"
   },
   {
-    "id": 12,
-    "title": "cartel2   ",
-    "description": "descripcion del cartel2 je",
-    "extra": "12x43",
+    "id": 15,
+    "title": "la lona",
+    "description": "la con",
+    "extra": "de la lona",
+    "images": "images-1648514801066.jpg",
+    "category": "Lonas"
+  },
+  {
+    "id": 16,
+    "title": "asdasd",
+    "description": "asdasd",
+    "extra": "q onda sergio",
+    "images": "images-1648518328336.jpeg",
+    "category": "Banners"
+  },
+  {
+    "id": 19,
+    "title": "asdasd",
+    "description": "asdasd",
+    "extra": "asdasd",
+    "images": "images-1648518675151.jpeg",
+    "category": "Lonas"
+  },
+  {
+    "id": 20,
+    "title": "Cartel 2",
+    "description": "grande",
+    "extra": "54x60",
+    "images": "images-1648518914456.jpeg",
     "category": "Carteles"
   },
   {
-    "id": 13,
-    "title": "asfadf",
+    "id": 22,
+    "title": "sticker",
     "description": "asdasd",
-    "extra": "fasf",
-    "images": "images-1648512930750.jpeg",
+    "extra": "asdasd",
+    "images": "images-1648519488795.jpeg",
     "category": "Stickers"
+  },
+  {
+    "id": 23,
+    "title": "sticker2",
+    "description": "asdasd",
+    "extra": "asdasd",
+    "images": "images-1648519630979.jpeg",
+    "category": "Stickers"
+  },
+  {
+    "id": 24,
+    "title": "sticker3",
+    "description": "asdsad",
+    "extra": "asdasd",
+    "images": "images-1648519673705.jpeg",
+    "category": "Stickers"
+  },
+  {
+    "id": 25,
+    "title": "Cartel 3",
+    "description": "adsad",
+    "extra": "adasd",
+    "images": "images-1648521183933.jpeg",
+    "category": "Carteles"
   }
 ]
