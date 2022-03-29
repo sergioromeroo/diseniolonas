@@ -163,7 +163,7 @@ main.detail {
   font-weight: lighter;
 }
 
-.text-description b, strong {
+.text-description strong {
   font-weight: bolder;
   border-bottom: 1px solid blue;
 }
