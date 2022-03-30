@@ -19,24 +19,25 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
 
     add : (req,res) => {
         return res.render('productAdd',{
-            categorias
+            categorias,
+            productos
         })
     },
 
     save : (req,res) =>{
+        
         let errors = validationResult(req);/* validaciones del back si esta vacio los datos dame error sino hace lo siguiente lo de abajo*/
         if(errors.isEmpty()){
             const {title,extra,category,images} = req.body;
             let producto ={
                 id : productos[productos.length - 1].id + 1,
-                title,
-                
+                title,     
                 extra,
                 images: req.file ? req.file.filename : 'default-image.png',
                 category
             }
             productos.push(producto)
-            fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productos,null,2),'utf-8')/* q se me guarde en el json  */
+            guardar(productos)
             return res.redirect('/')
         }else{
             return res.render('productAdd',{

@@ -1,4 +1,13 @@
 [
-
+    {
+        "id": 1,
+        "title": "Iphone SE",
+        "description": "lorem ipsum dolor amet sit            ",
+        "price": 100,
+        "images": [
+          "2.jpeg"
+        ],
+        "category": "Ploteos"
+      }
   
 ]
