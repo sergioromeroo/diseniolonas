@@ -12,7 +12,7 @@
   .
         <section class="container-products">
 
-            <h2 class="productos-title">Carteles</h2>
+            <h2 class="productos-title">Letreros</h2>
             <ul class="container-stickers">
               
               <% Letreros.forEach(pr => { %>
@@ -23,7 +23,6 @@
                     </figure>
                     <article class="product-box_data">
                       <h2><%= pr.title %></h2>
-                      <span>descuento % OFF</span>
                       <p><%= pr.extra %></p>
                       <i class="fas fa-truck"></i>
                     </article>
@@ -38,10 +37,10 @@
   <!-- categoria banners -->
   <section class="container-products">
 
-    <h2 class="productos-title">Banners</h2>
+    <h2 class="productos-title">Carteles</h2>
     <ul class="container-stickers">
       
-      <% Letreros.forEach(pr => { %>
+      <% Carteles.forEach(pr => { %>
         <li class="product-box">
           <a href="/products/detail/<%= pr.id %>">
             <figure class="product-box_image">
@@ -49,7 +48,6 @@
             </figure>
             <article class="product-box_data">
               <h2><%= pr.title %></h2>
-              <span>descuento % OFF</span>
               <p><%= pr.extra %></p>
               <i class="fas fa-truck"></i>
             </article>
@@ -69,10 +67,10 @@
 
       <section class="container-products">
 
-        <h2 class="productos-title">Lonas</h2>
+        <h2 class="productos-title">Gigantografias</h2>
         <ul class="container-stickers">
           
-          <% Letreros.forEach(pr => { %>
+          <% Gigantografias.forEach(pr => { %>
             <li class="product-box">
               <a href="/products/detail/<%= pr.id %>">
                 <figure class="product-box_image">
@@ -80,7 +78,6 @@
                 </figure>
                 <article class="product-box_data">
                   <h2><%= pr.title %></h2>
-                  <span>descuento % OFF</span>
                   <p><%= pr.extra %></p>
                   <i class="fas fa-truck"></i>
                 </article>
@@ -101,10 +98,10 @@
 <!-- categoria stickers -->
         <section class="container-products">
 
-          <h2 class="productos-title">Stickers</h2>
+          <h2 class="productos-title">Impresiones</h2>
           <ul class="container-stickers">
             
-            <% Letreros.forEach(pr => { %>
+            <% Impresiones.forEach(pr => { %>
               <li class="product-box">
                 <a href="/products/detail/<%= pr.id %>">
                   <figure class="product-box_image">
@@ -112,7 +109,6 @@
                   </figure>
                   <article class="product-box_data">
                     <h2><%= pr.title %></h2>
-                    <span>descuento % OFF</span>
                     <p><%= pr.extra %></p>
                     <i class="fas fa-truck"></i>
                   </article>
@@ -132,7 +128,7 @@
           <h2 class="productos-title">Autoadhesivos</h2>
           <ul class="container-stickers">
             
-            <% Letreros.forEach(pr => { %>
+            <% Autoadhesivos.forEach(pr => { %>
               <li class="product-box">
                 <a href="/products/detail/<%= pr.id %>">
                   <figure class="product-box_image">
@@ -140,7 +136,6 @@
                   </figure>
                   <article class="product-box_data">
                     <h2><%= pr.title %></h2>
-                    <span>descuento % OFF</span>
                     <p><%= pr.extra %></p>
                     <i class="fas fa-truck"></i>
                   </article>
@@ -158,7 +153,7 @@
         <h2 class="productos-title">Ploteos</h2>
         <ul class="container-stickers">
           
-          <% Letreros.forEach(pr => { %>
+          <% Ploteos.forEach(pr => { %>
             <li class="product-box">
               <a href="/products/detail/<%= pr.id %>">
                 <figure class="product-box_image">
@@ -166,7 +161,6 @@
                 </figure>
                 <article class="product-box_data">
                   <h2><%= pr.title %></h2>
-                  <span>descuento % OFF</span>
                   <p><%= pr.extra %></p>
                   <i class="fas fa-truck"></i>
                 </article>
