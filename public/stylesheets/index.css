@@ -317,7 +317,7 @@
 @media screen and (min-width: 320px){
 
     .main .secc1{
-      height:32rem;
+      height:65rem;
     }
 
     .main .secc1 .secc1-text h1.secc1-title{
@@ -458,6 +458,7 @@
     .main .secc2 .izq .boton-mail p {
       padding: 19px 26px;
       padding-bottom: 9px;
+      color: orange;
     }
 
     .main .maps{

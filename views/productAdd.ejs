@@ -12,41 +12,45 @@
 
     
     
-  <div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Formulario de creación de productos</h2>
-			</div>
-		</div>
-		<div class="col-12">
-			<form action="" method="POST">
-				<div class="row product-detail">
-					<div class="col-12 col-md-6">
-						<label for="name" class="form-label">Nombre del producto:</label>
-						<input type="text" id="name" name="title" placeholder="Ej: Zapatillas Reebok" class="form-input">
-					</div>
-				
-					
-					<div class="col-12 col-md-6">
-						<label for="category" class="form-label">Categoría:</label>
-						<select name="category" id="category" class="form-input">
-							<option value="">Elegí</option>
-							<option value="in-sale">En oferta</option>
-							<option value="visited">Últimos agregados</option>
-						</select>
-					</div>
-					<div class="col-12">
-						<label for="description" class="form-label">Descipción:</label>
-						<textarea name="extra" id="description" class="form-input"></textarea>
-					</div>
-					<div class="col-12">
-						<button type="submit" class="buy-now-button">Guardar producto</button>
-					</div>
-				</div>
-			</form>
-		</div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">titulo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="escribir titulo " name="title" value="<%= locals.old && old.title ? old.title : null %>">
+              <h3 class="small alert-danger"><%= locals.errores && errores.title ? errores.title.msg : null%> </h3>
 
-	</div>
+            </div>
+
+
+
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">extra demas que quieras agregar</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" name="extra" value="<%= locals.old && old.extra ? old.extra : null %>">
+                <h3 class="small alert-danger"><%= locals.errores && errores.extra ? errores.extra.msg : null%> </h3>
+              </div>
+          
+          
+            <div class="mb-3">
+              <select class="form-select"  aria-label="select example" name="category">
+                <option value="">seleccione una categoria</option>
+                <% categorias.forEach(categoria => { %>
+                  <option value="<%= categoria %>"<%= locals.old && old.category === categoria ? 'selected' : null%> ><%= categoria %></option>
+                <% }) %> 
+              </select>
+              <h3 class="small alert-danger"><%= locals.errores && errores.category ? errores.category.msg : null%> </h3>
+
+              <br>
+          
+            <div class="mb-3">
+              <label for="productImagen" class="form-label">imagen</label>
+              <input type="file" class="form-control" id="productImagen" name="images" ><!-- required -->
+              
+            </div>
+          
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit" >Enviar </button>
+            </div>
+          
+    </form>
 </main>
 
   
