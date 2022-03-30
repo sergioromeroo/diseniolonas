@@ -25,7 +25,6 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     },
 
     save : (req,res) =>{
-        
         let errors = validationResult(req);/* validaciones del back si esta vacio los datos dame error sino hace lo siguiente lo de abajo*/
         if(errors.isEmpty()){
             const {title,extra,category,images} = req.body;
@@ -36,7 +35,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
                 images: req.file ? req.file.filename : 'default-image.png',
                 category
             }
-            productos.push(producto)
+            productos.push(producto)    
             guardar(productos)
             return res.redirect('/')
         }else{
