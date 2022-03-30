@@ -459,7 +459,7 @@ textarea.form-input {
 
   .container-stickers{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }  
 
