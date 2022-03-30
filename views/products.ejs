@@ -5,87 +5,107 @@
 
 <body>
   <%- include('./partials/header') %> 
+
+
   <div class="container-total">
   <!-- categorias carteles -->
   .
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Letreros</h2>
-			</div>
-			<!-- Show the "visited" products -->
-      <div class="container-carteles">
-			<% Letreros.forEach(pr => { %>
+        <section class="container-products">
 
-      
-        <div class="col-12 col-sm-6 col-lg-3">
-					<section class="product-box">
-						<a href="/products/detail/<%= pr.id %>">
-							<figure class="product-box_image">
-								<img src="/images/<%= pr.images %>" alt="imagen de producto">
-							</figure>
-							<article class="product-box_data">
-								<h2><%= pr.title %></h2>
-								<span>descuento % OFF</span>
-								<p><%= pr.extra %></p>
-								<i class="fas fa-truck"></i>
-							</article>
-						</a>
-					</section>
-				</div>			
-			<%}); %>
-			</div>
+            <h2 class="productos-title">Carteles</h2>
+            <ul class="container-stickers">
+              
+              <% Letreros.forEach(pr => { %>
+                <li class="product-box">
+                  <a href="/products/detail/<%= pr.id %>">
+                    <figure class="product-box_image">
+                      <img src="/images/<%= pr.images %>" alt="imagen de producto">
+                    </figure>
+                    <article class="product-box_data">
+                      <h2><%= pr.title %></h2>
+                      <span>descuento % OFF</span>
+                      <p><%= pr.extra %></p>
+                      <i class="fas fa-truck"></i>
+                    </article>
+                  </a>
+                </li>
+                
+              <%}); %>
+            </ul>
 
-		</div>
-	</div>
+        </section>
 
   <!-- categoria banners -->
-      <div class="container products-wrapper">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="products-title">Carteles</h2>
-          </div>
-          <!-- Show the "in-sale" products -->
-          <div class="container-stickers">
-                <% Carteles.forEach(pr => { %>
-                    <div class="container-box">
-                      <div class="col-12 col-sm-6 col-lg-3">
-                        <section class="product-box">
-                          <a href="/products/detail/<%= pr.id %>">
-                            <figure class="product-box_image">
-                              <img src="/images/<%= pr.images %>" alt="imagen de producto">
-                            </figure>
-                            <article class="product-box_data">
-                              <h2><%= pr.title %></h2>
-                              <span>descuento % OFF</span>
-                              <p><%= pr.extra %></p>
-                              <i class="fas fa-truck"></i>
-                            </article>
-                          </a>
-                        </section>
-                      </div>
-                    </div>
-                  
-                <%}); %>
-            </div>
-        </div>
-      </div>
+  <section class="container-products">
+
+    <h2 class="productos-title">Banners</h2>
+    <ul class="container-stickers">
+      
+      <% Letreros.forEach(pr => { %>
+        <li class="product-box">
+          <a href="/products/detail/<%= pr.id %>">
+            <figure class="product-box_image">
+              <img src="/images/<%= pr.images %>" alt="imagen de producto">
+            </figure>
+            <article class="product-box_data">
+              <h2><%= pr.title %></h2>
+              <span>descuento % OFF</span>
+              <p><%= pr.extra %></p>
+              <i class="fas fa-truck"></i>
+            </article>
+          </a>
+        </li>
+        
+      <%}); %>
+    </ul>
+
+</section>
+
 
 
 			
 
 <!-- categoria Lonas -->
 
-  <div class="container products-wrapper">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="products-title">Gigantografias</h2>
-      </div>
-      <!-- Show the "in-sale" products -->
-      <div class="container-lonas">
-          <% Gigantografias.forEach(pr => { %>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <section class="product-box">
+      <section class="container-products">
+
+        <h2 class="productos-title">Lonas</h2>
+        <ul class="container-stickers">
+          
+          <% Letreros.forEach(pr => { %>
+            <li class="product-box">
+              <a href="/products/detail/<%= pr.id %>">
+                <figure class="product-box_image">
+                  <img src="/images/<%= pr.images %>" alt="imagen de producto">
+                </figure>
+                <article class="product-box_data">
+                  <h2><%= pr.title %></h2>
+                  <span>descuento % OFF</span>
+                  <p><%= pr.extra %></p>
+                  <i class="fas fa-truck"></i>
+                </article>
+              </a>
+            </li>
+            
+          <%}); %>
+        </ul>
+
+      </section>
+
+
+
+  
+
+
+
+<!-- categoria stickers -->
+        <section class="container-products">
+
+          <h2 class="productos-title">Stickers</h2>
+          <ul class="container-stickers">
+            
+            <% Letreros.forEach(pr => { %>
+              <li class="product-box">
                 <a href="/products/detail/<%= pr.id %>">
                   <figure class="product-box_image">
                     <img src="/images/<%= pr.images %>" alt="imagen de producto">
@@ -97,112 +117,67 @@
                     <i class="fas fa-truck"></i>
                   </article>
                 </a>
-              </section>
-            </div>
+              </li>
+              
+            <%}); %>
+          </ul>
+
+        </section>
+
+
+
+
+        <section class="container-products">
+
+          <h2 class="productos-title">Autoadhesivos</h2>
+          <ul class="container-stickers">
+            
+            <% Letreros.forEach(pr => { %>
+              <li class="product-box">
+                <a href="/products/detail/<%= pr.id %>">
+                  <figure class="product-box_image">
+                    <img src="/images/<%= pr.images %>" alt="imagen de producto">
+                  </figure>
+                  <article class="product-box_data">
+                    <h2><%= pr.title %></h2>
+                    <span>descuento % OFF</span>
+                    <p><%= pr.extra %></p>
+                    <i class="fas fa-truck"></i>
+                  </article>
+                </a>
+              </li>
+              
+            <%}); %>
+          </ul>
+
+      </section>
+
+
+      <section class="container-products">
+
+        <h2 class="productos-title">Ploteos</h2>
+        <ul class="container-stickers">
+          
+          <% Letreros.forEach(pr => { %>
+            <li class="product-box">
+              <a href="/products/detail/<%= pr.id %>">
+                <figure class="product-box_image">
+                  <img src="/images/<%= pr.images %>" alt="imagen de producto">
+                </figure>
+                <article class="product-box_data">
+                  <h2><%= pr.title %></h2>
+                  <span>descuento % OFF</span>
+                  <p><%= pr.extra %></p>
+                  <i class="fas fa-truck"></i>
+                </article>
+              </a>
+            </li>
+            
           <%}); %>
+        </ul>
 
-      </div>
-    </div>
-  </div>
+    </section>
 
-
-  
-
-
-
-<!-- categoria stickers -->
-<div class="container products-wrapper">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="products-title">Impresiones</h2>
-    </div>
-    <!-- Show the "in-sale" products -->
-
-    <div class="container-banners">
-        <% Impresiones.forEach(pr => { %>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <section class="product-box">
-              <a href="/products/detail/<%= pr.id %>">
-                <figure class="product-box_image">
-                  <img src="/images/<%= pr.images %>" alt="imagen de producto">
-                </figure>
-                <article class="product-box_data">
-                  <h2><%= pr.title %></h2>
-                  <span>descuento % OFF</span>
-                  <p><%= pr.extra %></p>
-                  <i class="fas fa-truck"></i>
-                </article>
-              </a>
-            </section>
-          </div>
-        <%}); %>
-
-      </div>
-  </div>
-</div>
-
-
-
-<div class="container products-wrapper">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="products-title">Autoadhesivos</h2>
-    </div>
-    <!-- Show the "in-sale" products -->
-
-    <div class="container-banners">
-        <% Autoadhesivos.forEach(pr => { %>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <section class="product-box">
-              <a href="/products/detail/<%= pr.id %>">
-                <figure class="product-box_image">
-                  <img src="/images/<%= pr.images %>" alt="imagen de producto">
-                </figure>
-                <article class="product-box_data">
-                  <h2><%= pr.title %></h2>
-                  <span>descuento % OFF</span>
-                  <p><%= pr.extra %></p>
-                  <i class="fas fa-truck"></i>
-                </article>
-              </a>
-            </section>
-          </div>
-        <%}); %>
-
-      </div>
-  </div>
-</div>
-
-
-<div class="container products-wrapper">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="products-title">Ploteos</h2>
-    </div>
-    <!-- Show the "in-sale" products -->
-
-    <div class="container-banners">
-        <% Ploteos.forEach(pr => { %>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <section class="product-box">
-              <a href="/products/detail/<%= pr.id %>">
-                <figure class="product-box_image">
-                  <img src="/images/<%= pr.images %>" alt="imagen de producto">
-                </figure>
-                <article class="product-box_data">
-                  <h2><%= pr.title %></h2>
-                  <span>descuento % OFF</span>
-                  <p><%= pr.extra %></p>
-                  <i class="fas fa-truck"></i>
-                </article>
-              </a>
-            </section>
-          </div>
-        <%}); %>
-
-      </div>
-  </div>
-</div>
 
 
 
