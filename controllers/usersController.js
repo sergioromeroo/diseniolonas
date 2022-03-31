@@ -22,6 +22,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
                 nombre,
                 email,
                 contrasenia : bcrypt.hashSync(contrasenia,10), /* encriptado la contraseña */
+                rol : "user"
             }
             usuarios.push(usuario)
             guardar(usuarios);
