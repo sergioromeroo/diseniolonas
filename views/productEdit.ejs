@@ -6,8 +6,9 @@
 <body>
   <%- include('./partials/header') %> 
 
-<main>
-    <h2>editar productos</h2>
+<main class="editar">
+
+    <h2>EDITAR PRODUCTO</h2>
         <form action="/products/edit/<%= producto.id %>?_method=PUT" method="post">
             <div class="mb-3">
               <label for="formGroupExampleInput" class="form-label">titulo</label>
