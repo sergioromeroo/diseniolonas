@@ -5,18 +5,20 @@
 
 <body>
   <%- include('./partials/header') %>
-
+  <main class="container">
   <div class="register">
-    <main class="container">
+    <h2>REGISTRATE</h2>
       <div class="row">
+        
         <div class="col-7 mx-auto mt-5">
           <div class="card">
+            
             <div class="card-body">
-              <h5 class="card-title text-center">REGISTRATE</h5>
+              <!-- <h5 class="card-title text-center">REGISTRATE</h5> -->
               
               <form class="row" method="POST" novalidate><!-- novalidate es para q lo de html no me toma sus validaciones tontas jeje -->
                 <div class="col-12 col-md-6 mb-3">
-                  <label for="exampleInputName" class="form-label">Nombre</label>
+                  <label for="exampleInputName" class="form-label">Nombre </label>
                   <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
                     name="nombre" value="<%= locals.old && locals.old.nombre ? old.nombre : null%>"> <!-- el value es para q si puse nombre bien q no me muestre el error de colocar bien el nombre q quede bien -->
                     <span class="text-danger small"><%= locals.errores && locals.errores.nombre ? errores.nombre.msg : null %> </span>
@@ -124,9 +126,9 @@
       </div>
   </div>
 
-
+</div>
   </main>
-  </div>
+  
 
   <%- include('./partials/footer') %>
 
