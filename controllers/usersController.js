@@ -53,6 +53,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
                 nombre : usuario.nombre,
                 rol : usuario.rol
             }
+            //res.locals.userLogin = req.session.userLogin; /*un usuario logeado lo mismo q esta en sesion va estar en usuario logeado  */
 
             if(recordar){
                 res.cookie('craftsyForEver',req.session.userLogin,{maxAge: 1000 * 60})
@@ -64,5 +65,9 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
                 errores : errors.mapped()
             })
         }
+    },
+    logout: (req,res) => {/* para romper todas las sessiones abiertas es decir cerrar sesion con esto */
+        req.session.destroy();
+        return res.redirect('/')
     }
 }

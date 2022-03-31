@@ -50,8 +50,29 @@
 
 			
 			
-			
+			<% if (locals.userLogin) { %> <!-- una ves logeado q vea lo siguiente -->
 
+				<div class="nav-2">	
+					<nav class="nav-header-menu">
+						<div class="dropdown">
+							<a class="dropdown-item" href="/">bienvenido <%= locals.userLogin.nombre %></a>
+							<button class="btn btn-secondary dropdown-toggle color-boton-caca" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="fas fa-user-circle"></i>
+							</button>
+							<ul class="btn2 dropdown-menu dropdown p-2 mb-2 color-menu-caca" aria-labelledby="dropdownMenuButton1" >
+								<% if (locals.userLogin.rol === "admin") { %>	<!-- aca si sos admin se va aparecer el agregar producto -->
+									<li><a class="dropdown-item" href="">administrador fernando</a></li>							  
+									<li><a class="dropdown-item" href="/products/add">Agregar producto</a></li>
+								  <% } %>
+							  <li><a class="dropdown-item" href="/users/logout">cerrar sesion</a></li>
+							</ul> 
+						</div>
+					</nav>									
+				</div>
+
+
+				
+			<% }else{ %><!-- de lo contrario si no esta logeado q se vea lo siguiente -->
 
 			<div class="nav-2">	
 				<nav class="nav-header-menu">
@@ -62,14 +83,16 @@
                         <ul class="btn2 dropdown-menu dropdown p-2 mb-2 color-menu-caca" aria-labelledby="dropdownMenuButton1" >
                           <li><a class="dropdown-item" href="/users/login">Ingresar</a></li>
                           <li><a class="dropdown-item" href="/users/register">Registrarse</a></li>
-						  <li><a class="dropdown-item" href="/products/add">Agregar producto</a></li>
                         </ul> 
                     </div>
-                </nav>
-				<!-- <a class="icon-login" href="/users/login"><img src="/images/person_avatar_account_user_icon_191606.svg" alt=""></a>			
-  				<a class="login" href="/users/login"></i>iniciar sesion</a> -->										
+                </nav>									
 			</div>
 			<!-- <i class="far fa-address-card"></i> --> <!-- ICONO SECUNDARIO -->
+			<% } %>
+			
+
+			
+
 
 
 		</div>

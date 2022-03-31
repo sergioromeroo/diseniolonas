@@ -16,5 +16,12 @@
     "nombre": "manolo",
     "email": "romeosantos@gmail.com",
     "contrasenia": "$2a$10$2zbHwoknwA0/LciTObU.MuBqBBlq0v.HNThSw1NmqBAtzhcOveffy"
+  },
+  {
+    "id": 4,
+    "nombre": "manolo",
+    "email": "manolo@gmail.com",
+    "contrasenia": "$2a$10$M845h1lrJ9lItqWKi/vQE.itmoJYQrNQgCKHAwPg6WERANDlv/gny",
+    "rol": "admin"
   }
 ]

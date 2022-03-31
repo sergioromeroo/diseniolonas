@@ -7,9 +7,12 @@ var logger = require('morgan');
 const methodOverride =require('method-override');
 const session = require('express-session');
 
+const localsUserCheck = require('./middleware/localsUserCheck');/* usuario admin */
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
+const { application } = require('express');
 
 var app = express();
 
@@ -28,6 +31,8 @@ app.use(methodOverride('_method'));
 app.use(session({
   secret: 'secret'
 }))
+
+app.use(localsUserCheck)/* usuario admin */
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

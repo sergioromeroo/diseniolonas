@@ -77,16 +77,24 @@
 							<div class="btn-presupuesto">
 								<a href="https://api.whatsapp.com/send?phone=+541138849632">Solicitar presupuesto</a>
 							</div>
-							<div class="btns-admin">
-								<div class="btn-edit">
-									<a href="/products/edit/<%= producto.id %>" class="btn btn-success"> EDITAR PRODUCTO </a>
+
+
+							<% if (locals.userLogin && locals.userLogin.rol === "admin") { %>
+								
+								<div class="btns-admin">
+									<div class="btn-edit">
+										<a href="/products/edit/<%= producto.id %>" class="btn btn-success"> EDITAR PRODUCTO </a>
+									</div>
+									<div class="btn-delete">
+										<form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+											<button type="submit" class="btn btn-danger">ELIMINAR</button>
+										</form>
+									</div>
 								</div>
-								<div class="btn-delete">
-									<form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-										<button type="submit" class="btn btn-danger">ELIMINAR</button>
-									</form>
-								</div>
-							</div>
+
+							<% } %>
+
+							
 
 
 						</div>

@@ -24,11 +24,14 @@ const upload = multer({
     storage,
 })
 
+/* middleware */
+const adminUserCheck = require('../middleware/adminUserCheck')
+
 router.get('/products', products);
-router.get('/add', add);
+router.get('/add',adminUserCheck, add);/* antes q me mande la direccion de carga producot que se fije si es admin o no */
 router.post('/add',upload.single('images'),addProductValidator, save)
 router.get('/detail/:id',detail);
-router.get('/edit/:id',edit);
+router.get('/edit/:id',adminUserCheck,edit);
 router.put('/edit/:id',update);
 router.delete('/delete/:id',remove.destroy);
 router.get('/search',search);
