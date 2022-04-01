@@ -522,14 +522,11 @@ textarea.form-input {
   }
 }
 
-@media (min-width: 1024px){
-  figure {
-    height: 35rem;
-  }
-  
-}
 
-@media (min-width: 1200px){
+  
+
+
+@media (min-width: 1024px){
 
   .container-products{
     padding: 7rem 0 5rem 0;
@@ -543,9 +540,7 @@ textarea.form-input {
   margin: 40px 32px;
 }
 
-figure {
-  height: 22rem;
-}
+
 
 
 }

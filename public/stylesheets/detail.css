@@ -258,7 +258,7 @@ main.detail {
 
 .btns-admin {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 20px;
 }
 
@@ -307,6 +307,7 @@ main.detail {
   .container-detail-product{
     flex-direction: unset;
     padding: 4rem;
+    border: 2px solid orange;
   }
 
 
@@ -317,13 +318,27 @@ main.detail {
 
    .detail .container-detail-product {
     border-radius: 10px;
+   } 
+  .detail .btns-admin a.btn {
+    font-size: large;
+  }
+  .detail .btns-admin button {
+    font-size: large;
+  }
+
+
+      .detail ::before {
+        color: orange;
+      }
+  }
+@media (min-width: 1440px){
+  .container-detail-product{
+    width: 75% !important;
+  }
 }
 
-.detail ::before {
-  color: orange;
-}
 
-}
+
 
 @media (min-width: 1920px){
   .detail .title-product h1{
