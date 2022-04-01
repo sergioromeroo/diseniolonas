@@ -23,6 +23,9 @@ body {
 
 }
 
+img{
+	object-fit: cover;
+}
 
 
 
