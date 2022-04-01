@@ -163,14 +163,15 @@ hr {
   border-radius: 5px;
   overflow: hidden;
   transition: 300ms;
-  margin: 20px 70px;
+ padding-bottom: 5rem;
+ width: 90%;
 }
 
 .product-box a {
   display: block;
   color: white;
   background-color: #020b20;
-  width: 22rem;
+  /* width: 22rem; */
 }
 
  
@@ -220,7 +221,7 @@ hr {
   border: solid 1px;
   border-radius: 50%;
   position: absolute;
-  margin-top: 46px;
+  margin-top: 2.7rem;
   margin-left: 17.1rem;
   background-color: #ffffff;
   display: flex;
@@ -252,6 +253,7 @@ h2.products-title {
   transform: rotate(360deg);
   box-shadow: 0 0 5px var(--green);
 }
+
 
 
 /*====== Footer ======*/
@@ -419,9 +421,13 @@ textarea.form-input {
   padding: 15px;
 }
 
-
-
-
+@media (min-width: 425px) {
+  .product-box {
+  
+    width: 95%;
+   }
+  
+}
 
 /*====== Media-Queries ======*/
 @media (min-width: 768px) {
@@ -430,7 +436,10 @@ textarea.form-input {
   .productos-item{
     width: 35vw;
 }
-
+.product-box {
+  
+ width: 60%;
+}
   .productos-item:not(:last-child){
   margin-bottom: 3rem;
   }
@@ -513,7 +522,12 @@ textarea.form-input {
   }
 }
 
-
+@media (min-width: 1024px){
+  figure {
+    height: 35rem;
+  }
+  
+}
 
 @media (min-width: 1200px){
 
@@ -524,8 +538,23 @@ textarea.form-input {
 .productos-item{
   width: 23vw;
 }
+.product-box {
+  width: 22rem;
+  margin: 40px 32px;
+}
 
-
+figure {
+  height: 22rem;
+}
 
 
 }
+
+@media (min-width: 1980px){
+.product-box {
+  width: 35rem;
+  margin: 6rem 5rem;
+}
+
+}
+

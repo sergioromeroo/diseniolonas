@@ -15,35 +15,10 @@
 				<div class="lado-izq">
 					
 						<div class="arriba">
-							<img src="/images/<%= producto.images %>" alt="product image" class="product-detail-img">
+							<img src="/images/<%= producto.images %>" alt="product image">
 						</div>
 						
 						<div class="abajo">	
-							<div class="title-description">
-								<h2>Descripcion</h2>
-							</div>
-							<div class="text-description">
-									<h3>✔️  <strong>Beneficios:</strong><small> Crea una imagen moderna con una gran identidad corporativa.</small>
-										<br>
-										<br>✔️  <strong>Colocación:</strong><small> Aptas para interior y exterior.</small>
-										<br>
-										<br>✔️  <strong>Iluminación:</strong><small> Con iluminación mediante módulos LED.</small>
-										<br>
-										<br>✔️  <strong>Materiales:</strong><small> Chapa pintada, acero inoxidable, frente de acrílico, polyfan, madera y otros.</small>
-										<br>
-										<br>Elegi entre los <strong> más de 50 modelos disponibles </strong> con infinitas combinaciones. 
-									</h3>			
-							</div>			
-						</div>		
-				
-								
-				</div>
-
-
-				<div class="lado-der">
-
-					
-						<div class="arriba">
 							
 							<div class="product">
 								<div class="title-product">
@@ -53,10 +28,6 @@
 									<p style="font-style: italic;"><%= producto.extra %></p>
 								</div>
 							</div>
-							
-
-
-
 							<div class="envios-retiro">
 								<div class="envios-domi">
 									<p><i class="fas fa-credit-card"></i> Envios a Domicilio</p>
@@ -67,18 +38,51 @@
 									
 								</div>
 							</div>
-							
-						</div>
-
-
-
-						<div class="abajo">
-
 							<div class="btn-presupuesto">
 								<a href="https://api.whatsapp.com/send?phone=+541138849632">Solicitar presupuesto</a>
 							</div>
 
 
+									
+						</div>		
+				
+								
+				</div>
+
+
+				<div class="lado-der">
+
+					
+						<div class="arriba-der">
+							
+							
+							<div class="title-description">
+								<h2>Descripcion</h2>
+							</div>
+
+							<div class="text-description">
+								<h3>✔️  <strong>Beneficios:</strong><small> Crea una imagen moderna con una gran identidad corporativa.</small>
+									<br>
+									<br>✔️  <strong>Colocación:</strong><small> Aptas para interior y exterior.</small>
+									<br>
+									<br>✔️  <strong>Iluminación:</strong><small> Con iluminación mediante módulos LED.</small>
+									<br>
+									<br>✔️  <strong>Materiales:</strong><small> Chapa pintada, acero inoxidable, frente de acrílico, polyfan, madera y otros.</small>
+									<br>
+									<br>Elegi entre los <strong> más de 50 modelos disponibles </strong> con infinitas combinaciones. 
+								</h3>			
+						    </div>	
+
+							
+							
+						</div>
+
+
+
+						<div class="abajo-izq">
+							
+							
+							
 							<% if (locals.userLogin && locals.userLogin.rol === "admin") { %>
 								
 								<div class="btns-admin">

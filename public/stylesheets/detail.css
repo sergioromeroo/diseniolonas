@@ -1,4 +1,4 @@
-
+/* 
 main.detail {
   height: 100vh;
   display: flex;
@@ -13,8 +13,7 @@ main.detail {
   justify-content:center;
   align-items: center;
   background-color: white;
-  /* width: 80%; */
-  height: 100%;
+  height: 90%;
   border-radius: 10px;
 }
 
@@ -76,7 +75,7 @@ main.detail {
   display: flex;
   justify-content: center;
 }
-.lado-izq .abajo .title-description h2{
+.title-description h2{
   font-weight: lighter;
   text-align: center;
   font-size: 24px;
@@ -84,7 +83,7 @@ main.detail {
 }
 
 
-.lado-der .arriba .product-detail-title {
+.lado-izq  .product-detail-title {
   font-weight: lighter;
   font-size: 3.8em;
   text-align: center;
@@ -92,7 +91,7 @@ main.detail {
   border-radius: 10px;
 }
 
-.lado-der .arriba .detail-product p{
+.lado-izq .detail-product p{
   font-size: 24px;
   text-align: center;
   font-family: lighter;
@@ -101,13 +100,13 @@ main.detail {
 
 
 
-.lado-der .arriba .envios-domi p{
+ .envios-domi p{
   font-size: 22px;
   color: gray;
   font-weight: lighter;
 }
 
-.lado-der .arriba .retiro-local p{
+ .retiro-local p{
   font-size: 22px;
   color: gray;
   font-weight: lighter;
@@ -118,12 +117,13 @@ main.detail {
   font-size: 20px;
   
 }
-.lado-der .abajo .btn-presupuesto{
+.lado-izq .btn-presupuesto{
   font-size: 18px;
   text-align: center;
+  margin-bottom: 10rem;
 }
 
-.lado-der .abajo .btn-presupuesto a{
+.lado-izq .btn-presupuesto a{
   border: 1px solid orange;
   padding: 10px;
   border-radius: 8px;
@@ -167,4 +167,187 @@ main.detail {
 .lado-der .abajo .btn-presupuesto a:hover{
   background-color:orange;
   color: #1e2e54
+}
+
+
+ */
+
+ .container-detail-product {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.lado-izq {
+  color:black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.detail .arriba {
+  width: 90%;
+}
+
+
+.detail .product {
+  text-align: center;
+}
+
+
+.detail .arriba-der {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail .text-description {
+  display: flex;
+  width: 90%;
+  margin-top: 1rem;
+  border: 1px solid orange;
+  padding: 19px;
+  border-radius: 10px;
+}
+
+.detail .title-product {
+  border-bottom: 2px solid orange;
+  margin-top: 18px;
+}
+
+.envios-retiro {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.btn-presupuesto{
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid orange;
+  background: orange;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  color: white
+}
+.btn-presupuesto:hover{
+  background-color: #030F2D; 
+}
+.btn-presupuesto a:hover{
+     color: white; 
+     
+}
+.detail p {
+  font-size: 13px;
+}
+
+.detail h2 {
+  border-bottom: 1px solid orange;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.detail h3 {
+ 
+  font-weight: lighter;
+}
+
+
+.btns-admin {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
+@media (min-width: 768px){
+
+  main.detail {
+    display: flex;
+    justify-content: center;
+}
+
+  .lado-izq{
+    margin-top: 17px;
+  }
+  .detail .arriba-der {
+    margin-bottom: 18px;
+    margin-top: 4rem;
+}
+
+
+.detail .arriba {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.detail img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.detail .container-detail-product {
+ 
+  width: 90%;
+  
+}
+
+
+}
+
+
+
+@media (min-width: 1200px){
+
+  .container-detail-product{
+    flex-direction: unset;
+    padding: 4rem;
+  }
+
+
+  .detail .lado-izq {    
+    width: 60%;
+    border-right: 1px solid orange;
+   }
+
+   .detail .container-detail-product {
+    border-radius: 10px;
+}
+
+.detail ::before {
+  color: orange;
+}
+
+}
+
+@media (min-width: 1920px){
+  .detail .title-product h1{
+    font-size: 5rem;
+  }
+
+  .detail p {
+    font-size: 17px;
+  }
+
+
+  .btn-presupuesto {
+    font-size: 25px;
+    padding: 22px;
+   
+}
+
+.detail h3 {
+  font-size: 3rem;
+}
+
+.detail b, strong {
+  font-weight: lighter;
+  border-color: 1px solid orange;
+  border-bottom: 2px solid orange;
+}
 }

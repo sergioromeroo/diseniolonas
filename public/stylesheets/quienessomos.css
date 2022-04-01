@@ -14,16 +14,31 @@
     text-align: center;
     width: 90%;
 }
-
+.quienes-somos-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
 
 .quienes-somos-text p{
     font-size: 11px;
     line-height: 21px;
 }
 
+.quienes-somos h2 {
+    border-bottom: 2px solid orange;
+    font-weight: lighter;
+}
+@media(min-width: 768px) {
+    .quienes-somos-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+}
 
-
-
+}
 @media(min-width: 1024px) {
     .quienes-somos-text{
         margin-top: 6rem;
@@ -43,7 +58,29 @@
         display: flex;
         flex-direction: unset !important;
     }
+    .quienes-somos-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       /*  background: white; */
+        color: white;
+        border-radius: 10px;
+    }
 
+    .quienes-somos-text p{
+        font-size: 17px;
+        line-height: 35px;
+        font-weight: lighter;
+        width:90%;
+    }
+    
+    .quienes-somos h2 {
+        font-size: 2rem;
+        padding: 14px 0 0 0;
+        border-bottom: 2px solid orange;
+        font-weight: lighter;
+    }
 
 
 }
@@ -57,6 +94,12 @@
         font-size: 23px;
         line-height: 57px;
         font-weight: lighter;
+    }
+    .quienes-somos h2{
+        font-size: 4rem;
+        padding: 14px 0 0 0;
+        border-bottom: 2px solid orange;
+
     }
 
 }
