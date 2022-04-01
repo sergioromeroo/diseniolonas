@@ -56,7 +56,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
             }
             /* guardo la cookie */
             if(recordar){
-                res.cookie('adminFerchu',req.session.userLogin,{maxAge: 5000 * 60})
+                res.cookie('adminFerchu',req.session.userLogin,{maxAge: 60000})/* esto es para q despues de 5min se cierra la sesion solo osino entras mñna misma pagina sigue abierta es por seguridad */
             }
             return res.redirect('/')
         }else{
