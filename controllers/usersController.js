@@ -56,7 +56,9 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
             //res.locals.userLogin = req.session.userLogin; /*un usuario logeado lo mismo q esta en sesion va estar en usuario logeado  */
 
             if(recordar){
-                res.cookie('craftsyForEver',req.session.userLogin,{maxAge: 1000 * 60})
+                res.cookie('craftsyForEver',req.session.userLogin,{
+                    maxAge: 1000 * 60  * 60
+                })
             }
             return res.redirect('/')
         }else{
@@ -70,4 +72,5 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
         req.session.destroy();
         return res.redirect('/')
     }
+    
 }

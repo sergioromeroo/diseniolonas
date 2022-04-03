@@ -103,4 +103,24 @@
         font-size: 19px;
     }
 
+    .login .mb-3.form-check {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+
+
+    .login label {
+        
+        font-size:27x;
+    }
+    input#exampleCheck1 {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+
 }

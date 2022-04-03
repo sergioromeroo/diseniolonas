@@ -1,89 +1,9 @@
 [
   {
-    "id": 1,
-    "title": "Carteles",
-    "description": "tendras todos los letreros de nuetros trabajo",
-    "extra": "anashee",
-    "images": [
-      "10.jpeg"
-    ],
-    "category": "Carteles"
-  },
-  {
-    "id": 2,
-    "title": "asdasdzxc",
-    "extra": "asdasdasdxzcxz",
-    "images": "images-1648659196088.jpeg",
-    "category": "Gigantografias"
-  },
-  {
     "id": 3,
     "title": "letrero",
     "extra": "este producto es good pa te lo recomienda tu mama",
     "images": "images-1648662868386.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 4,
-    "title": "letrero 2",
-    "extra": "q onda paa anahsee",
-    "images": "images-1648663331103.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 5,
-    "title": "letrero3",
-    "extra": "ASDA",
-    "images": "images-1648663346415.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 6,
-    "title": "letrero 4",
-    "extra": "si pa anasheee",
-    "images": "images-1648663363891.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 7,
-    "title": "letrero 5",
-    "extra": "sdfsdf",
-    "images": "images-1648663435341.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 8,
-    "title": "asdasd",
-    "extra": "asdasd",
-    "images": "images-1648674432573.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 9,
-    "title": "asdasd",
-    "extra": "asdasd",
-    "images": "images-1648674446490.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 10,
-    "title": "asdasd",
-    "extra": "q onda paa anahsee",
-    "images": "images-1648674459027.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 11,
-    "title": "jj",
-    "extra": "asdasd",
-    "images": "images-1648674796518.jpeg",
-    "category": "Letreros"
-  },
-  {
-    "id": 12,
-    "title": "jhy",
-    "extra": "yjy",
-    "images": "images-1648674812751.jpeg",
     "category": "Letreros"
   },
   {
@@ -92,12 +12,5 @@
     "extra": "q onda paa anahsee",
     "images": "images-1648742802580.png",
     "category": "Autoadhesivos"
-  },
-  {
-    "id": 14,
-    "title": "probando",
-    "extra": "123123",
-    "images": "images-1648761703333.jpeg",
-    "category": "Letreros"
   }
 ]

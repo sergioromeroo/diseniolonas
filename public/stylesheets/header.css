@@ -37,6 +37,10 @@
      font-size: 25px;
      
  }
+
+ .header li {
+    border-bottom: 1px solid #ffa50070;
+}
  
  .header .nav-header a {
     color: orange;
@@ -224,7 +228,7 @@
          }
  
          .header .header-container .nav-3 ul.btn2.dropdown-menu.dropdown.p-2.mb-2.color-menu-caca.show {
-             transform: translate3d(-101px, 42px, 0px) !important;
+            transform: translate3d(-49px, 42px, 0px) !important;
              
          }
  

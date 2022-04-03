@@ -172,12 +172,17 @@ main.detail {
 
  */
 
+ main.detail {
+  margin: 2rem;
+}
+
  .container-detail-product {
   display: flex;
   flex-direction: column;
   background-color: white;
   height: 100%;
   justify-content: space-around;
+  border-radius: 20px;
 }
 
 .lado-izq {
@@ -185,8 +190,11 @@ main.detail {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 33px;
 }
-
+.lado-der {
+  margin-bottom: 33px;
+}
 
 .detail .arriba {
   width: 90%;

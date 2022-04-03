@@ -551,5 +551,20 @@ textarea.form-input {
   margin: 6rem 5rem;
 }
 
+.product-box_data i {
+
+  width: 40px;
+  height: 40px;
+  
+  margin-left: 32.1rem;
+  
+}
+
+.product-box figure {
+  margin: 0;
+  padding: 0;
+  height: 37rem;
+}
+
 }
 
