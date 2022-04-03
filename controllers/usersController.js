@@ -48,17 +48,15 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
         const {email, recordar} = req.body;
         if(errors.isEmpty()){
             let usuario = usuarios.find(usuario => usuario.email === email)
+            /* levanto sesion */
             req.session.userLogin = {
                 id : usuario.id,
                 nombre : usuario.nombre,
                 rol : usuario.rol
             }
-            //res.locals.userLogin = req.session.userLogin; /*un usuario logeado lo mismo q esta en sesion va estar en usuario logeado  */
-
+            /* guardo la cookie */
             if(recordar){
-                res.cookie('craftsyForEver',req.session.userLogin,{
-                    maxAge: 1000 * 60  * 60
-                })
+                res.cookie('adminFerchu',req.session.userLogin,{maxAge: 60000})/* esto es para q despues de 5min se cierra la sesion solo osino entras mñna misma pagina sigue abierta es por seguridad */
             }
             return res.redirect('/')
         }else{
@@ -70,6 +68,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     },
     logout: (req,res) => {/* para romper todas las sessiones abiertas es decir cerrar sesion con esto */
         req.session.destroy();
+        res.cookie('adminFerchu',null,{maxAge:-1})/* ademas q me cierra sesion que me borre la cookies */
         return res.redirect('/')
     }
     

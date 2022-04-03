@@ -7,6 +7,8 @@ var logger = require('morgan');
 const methodOverride =require('method-override');
 const session = require('express-session');
 
+
+const cookieCheck = require('./middleware/cookieCheck');/* cookies */
 const localsUserCheck = require('./middleware/localsUserCheck');/* usuario admin */
 
 var indexRouter = require('./routes/index');
@@ -29,9 +31,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 /* este es una ves instalado express-session guardar tu logeada */
 app.use(session({
-  secret: 'secret'
+  secret: 'secret',
+  resave: false, /* estos 2 son nuevos actualizaciones deben estar resave y sabeunitlized nos puede joder si no estan por las cookies */
+  saveUninitialized: true
 }))
-
+app.use(cookieCheck)/* cookies */
 app.use(localsUserCheck)/* usuario admin */
 
 app.use('/', indexRouter);
