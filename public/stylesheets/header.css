@@ -38,9 +38,14 @@
      
  }
 
- .header li {
+ .header .nav-3 li {
     border-bottom: 1px solid #ffa50070;
 }
+.header .dropdown ul li {
+    border-bottom: 1px solid #ffa50070;
+}
+
+
  
  .header .nav-header a {
     color: orange;
@@ -124,9 +129,9 @@
      font-size: 7px;
  }
  
- .header .nav-2 .nav-header-menu{
+/*  .header .nav-2 .nav-header-menu{
      background-color:#030F2D;
- }
+ } */
  
  .header .nav-2 .nav-header-menu .btn2{
      background-color: #030F2D;
@@ -307,7 +312,10 @@
         height: 24.7rem;
     }
      
- 
+    .header  li.cerrar-sesion {
+        border: unset !important;
+    }
+    
      
  }
  
@@ -320,6 +328,7 @@
         height: 20.2vh !important;
     }
  
- 
+    .header .nav-header a {
+        font-size: 25px
  }
- 
+}
