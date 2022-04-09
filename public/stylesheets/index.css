@@ -462,7 +462,10 @@
     }
 
     .main .maps{
-      display: none;
+      display: flex;
+    flex-direction: row-reverse;
+    height: 64rem;
+    flex-wrap: wrap;
     } 
 
 }
