@@ -235,7 +235,7 @@
 
 .main .maps .api-maps iframe {
   height: 59rem;
-  width: 130rem;
+  width: 32rem;
    border-radius: 20px;
 }
 
@@ -467,6 +467,7 @@
     height: 64rem;
     flex-wrap: wrap;
     } 
+
 
 }
 
