@@ -235,8 +235,8 @@
 
 .main .maps .api-maps iframe {
   height: 59rem;
-  width: 32rem;
-   border-radius: 20px;
+  width: 37rem;
+   
 }
 
 .main .secc4{
@@ -337,8 +337,10 @@
   }
 
     .main .secc3 .title-secc3 h1 {
-      font-size: 16px;
+      font-size: 20px;
       padding: 20px 20px 15px;
+      font-weight: bold;
+
     }
 
 
@@ -396,7 +398,9 @@
     }
     
     .main .secc4 .title-articles h1{
-      font-size: 15px;
+      font-size: 16px;
+      padding: 20px 20px 15px;
+      font-weight: bold;
     }
 
     .main .secc4 .articles1{
