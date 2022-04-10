@@ -232,6 +232,12 @@
   font-size: 24px;
   font-weight: lighter;
 }
+.main .maps .box1 .direc-maps p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: bolder;
+}
 
 .main .maps .api-maps iframe {
   height: 59rem;
