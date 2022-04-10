@@ -4,5 +4,8 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
     },
     quienessomos : (req,res) => {
         return res.render('quienessomos')
+    },
+    marketing : (req,res) => {
+        return res.render('marketing')
     }
 }
