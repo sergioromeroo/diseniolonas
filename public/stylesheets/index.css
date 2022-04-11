@@ -35,13 +35,12 @@
     0deg,
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
-  ) ,url("../images/IMPRESIÓN-DE-LONA.jpg");
+  ) ,url("../images/portal.jpg");
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   color: aliceblue;
-  height: 65rem
 }
 
 .main .secc1 .secc1-text h1.secc1-title{
