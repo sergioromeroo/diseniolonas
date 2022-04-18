@@ -84,6 +84,7 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
 
         res.redirect('/')
     },
+    
 
     destroy : (req,res) => {
         //productos = productos.filter(producto => producto.id !== +req.params.id)  este seria otra opcion tambien debe de las 4 lineas de abajo
@@ -96,6 +97,8 @@ module.exports = {//TODO ESTO ES PARA  ME RENDERISE EL INDEX.EJS A HTML
         fs.writeFileSync(path.join(__dirname,'..','data','products.json'),JSON.stringify(productos,null,2),'utf-8')
         res.redirect('/products/products')
     },
+
+
     search : (req,res) => {
         let result = productos.filter(producto => producto.category === req.query.search)
         return res.render('result',{
